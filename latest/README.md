@@ -1,60 +1,109 @@
-# CI report — run #1
+# CI report — run #2
 
-- commit: `4341f98ca387e3925a76c6fe10441c5440b59113` (main, event: push)
-- run: https://github.com/lejiyo09/topsecret/actions/runs/40605916654
+- commit: `72cb02ee8528b0f2b6803ee095006fe564386447` (main, event: push)
+- run: https://github.com/lejiyo09/topsecret/actions/runs/40606347121
 - app version: 1.0.0 · release signing: ephemeral
 
 | job | result |
 |---|---|
-| build (compile, unit tests, lint, APKs) | failure |
-| device-test (emulator API 30 + 34) | skipped |
-| publish (GitHub Release) | skipped  |
+| build (compile, unit tests, lint, APKs) | success |
+| device-test (emulator API 30 + 34) | success |
+| publish (GitHub Release) | success created |
 
 ## JVM unit tests
-- no unit test results found (build did not reach the test task)
+- tests: 15, failures: 0, errors: 0, skipped: 0
 
 ## Android Lint (debug)
-- no lint report found
+- Warning: 22
 
 ## Release APK
 ```
-(not built)
+file: app/build/outputs/apk/release/app-release.apk
+size_bytes: 1820676
+sha256: f85c5bfd6ce25a4b743f89316e10cc63d6390acafbb493b2ab8547a4a673545b
+
+--- apksigner verify
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): false
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v3.2 scheme (APK Signature Scheme v3.2): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+V2 Signer: certificate DN: CN=Independent Browser (temporary CI key)
+V2 Signer: certificate SHA-256 digest: 5c9046ca095f9b1cad76b13bc64c4e4a196f6ce7e579613229c6263500304409
+V2 Signer: certificate SHA-1 digest: 2d4a3b0c6171221c71e4431d8d94f306ecf5955b
+V2 Signer: certificate MD5 digest: 026ba9b5d019b7b9c075e4b32369b8fd
+V2 Signer: key algorithm: RSA
+V2 Signer: key size (bits): 3072
+V2 Signer: public key SHA-256 digest: f12c02e8c8cdc9bb9d0ddc02745e1eb69524a5b09db1a1392488bc88718cd3f9
+V2 Signer: public key SHA-1 digest: 254104402711bcc92951673be1e997ab6a9b8f5e
+V2 Signer: public key MD5 digest: df4189621897a9934fd18ef684e52892
+
+--- aapt2 dump badging (selected lines)
+package: name='io.github.lejiyo09.independentbrowser' versionCode='10000' versionName='1.0.0' platformBuildVersionName='15' platformBuildVersionCode='35' compileSdkVersion='35' compileSdkVersionCodename='15'
+targetSdkVersion:'35'
+uses-permission: name='android.permission.INTERNET'
+uses-permission: name='android.permission.WRITE_EXTERNAL_STORAGE' maxSdkVersion='28'
+uses-permission: name='android.permission.CAMERA'
+uses-permission: name='android.permission.RECORD_AUDIO'
+uses-permission: name='android.permission.MODIFY_AUDIO_SETTINGS'
+uses-permission: name='io.github.lejiyo09.independentbrowser.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'
+application-label:'독립 브라우저'
+launchable-activity: name='io.github.lejiyo09.independentbrowser.MainActivity'  label='' icon=''
+uses-permission: name='android.permission.READ_EXTERNAL_STORAGE' maxSdkVersion='28'
+supports-screens: 'small' 'normal' 'large' 'xlarge'
+densities: '160' '240' '320' '480' '640' '65534'
+
+native_code: none (same APK runs on Intel/AMD and ARM Chromebooks)
 ```
 
-## Build errors
+## Emulator API 30
 ```
-e: The daemon has terminated unexpectedly on startup attempt #1 with error code: 0. The daemon process output:
-    1. Kotlin compile daemon is ready
-e: The daemon has terminated unexpectedly on startup attempt #2 with error code: 0. The daemon process output:
-    1. Kotlin compile daemon is ready
-Problems may have occurred during auto-selection of GC. The preferred GC is Parallel GC.
-If the problems persist, try adding the JVM option to the Kotlin daemon JVM arguments: -XX:-UseParallelGC.
-GC auto-selection logic is disabled temporary for the next daemon startup.
---
-> Task :app:compileDebugKotlin FAILED
-e: file:///home/runner/work/topsecret/topsecret/app/src/main/java/io/github/lejiyo09/independentbrowser/MainActivity.kt:453:89 'return' is prohibited here.
-
-> Task :app:compileReleaseKotlin
-e: file:///home/runner/work/topsecret/topsecret/app/src/main/java/io/github/lejiyo09/independentbrowser/MainActivity.kt:453:89 'return' is prohibited here.
-
-> Task :app:compileReleaseKotlin FAILED
-gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/gradle-1793145643280.json
-
-[Incubating] Problems report is available at: file:///home/runner/work/topsecret/topsecret/build/reports/problems/problems-report.html
-
---
-* What went wrong:
-Execution failed for task ':app:compileDebugKotlin'.
-> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
-   > Compilation error. See log for more details
-
---
-* What went wrong:
-Execution failed for task ':app:compileReleaseKotlin'.
-> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
-   > Compilation error. See log for more details
-
---
-BUILD FAILED in 2m 5s
-85 actionable tasks: 76 executed, 9 from cache
+api_level=30
+android_release=11
+webview=Current WebView package (name, version): (com.google.android.webview, 83.0.4103.106)
+screen=Physical size: 2560x1800
+instrumentation=pass (OK (10 tests))
+release_install=pass
+release_launch=pass (pid 5421, no crash)
+release_page_rendered=pass (UI tree contains 'Example Domain')
 ```
+Instrumentation output (tail):
+```
+
+io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest:..........
+
+Time: 28.838
+
+OK (10 tests)
+
+
+```
+![release smoke test API 30](release-smoke-api30.png)
+
+## Emulator API 34
+```
+api_level=34
+android_release=14
+webview=Current WebView package (name, version): (com.google.android.webview, 113.0.5672.136)
+screen=Physical size: 2560x1800
+instrumentation=pass (OK (10 tests))
+release_install=pass
+release_launch=pass (pid 5555, no crash)
+release_page_rendered=unknown (WebView text not in accessibility tree)
+```
+Instrumentation output (tail):
+```
+
+io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest:..........
+
+Time: 70.208
+
+OK (10 tests)
+
+
+```
+![release smoke test API 34](release-smoke-api34.png)

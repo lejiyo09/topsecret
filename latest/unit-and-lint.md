@@ -1,5 +1,5 @@
 ## JVM unit tests
-- no unit test results found (build did not reach the test task)
+- tests: 15, failures: 0, errors: 0, skipped: 0
 
 ## Android Lint (debug)
-- no lint report found
+- Warning: 22
