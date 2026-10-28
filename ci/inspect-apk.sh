@@ -14,7 +14,7 @@ mkdir -p ci-out
   echo
   echo "--- aapt2 dump badging (selected lines)"
   "$BT/aapt2" dump badging "$APK" |
-    grep -E "^(package|sdkVersion|targetSdkVersion|uses-permission|uses-feature|uses-feature-not-required|application-label:|launchable-activity|native-code|supports-screens|densities)" || true
+    grep -E "^ *(package|sdkVersion|targetSdkVersion|minSdkVersion|uses-permission|uses-feature|uses-feature-not-required|uses-implied-feature|feature-group|application-label:|launchable-activity|native-code|supports-screens|densities)" || true
   echo
   if "$BT/aapt2" dump badging "$APK" | grep -q '^native-code'; then
     echo "native_code: yes"
