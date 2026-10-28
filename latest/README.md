@@ -1,14 +1,14 @@
-# CI report — run #2
+# CI report — run #3
 
-- commit: `72cb02ee8528b0f2b6803ee095006fe564386447` (main, event: push)
-- run: https://github.com/lejiyo09/topsecret/actions/runs/40606347121
+- commit: `112a2dcd2fc693ba0a16420237b0fc9d4578fd34` (main, event: push)
+- run: https://github.com/lejiyo09/topsecret/actions/runs/40607295657
 - app version: 1.0.0 · release signing: ephemeral
 
 | job | result |
 |---|---|
 | build (compile, unit tests, lint, APKs) | success |
-| device-test (emulator API 30 + 34) | success |
-| publish (GitHub Release) | success created |
+| device-test (emulator API 30 + 34) | failure |
+| publish (GitHub Release) | skipped  |
 
 ## JVM unit tests
 - tests: 15, failures: 0, errors: 0, skipped: 0
@@ -20,7 +20,7 @@
 ```
 file: app/build/outputs/apk/release/app-release.apk
 size_bytes: 1820676
-sha256: f85c5bfd6ce25a4b743f89316e10cc63d6390acafbb493b2ab8547a4a673545b
+sha256: 41ad81eef36f1352b176b814a60ff1a043a21cb8af4e8f3ce609f17cc5941384
 
 --- apksigner verify
 Verifies
@@ -33,17 +33,18 @@ Verified using v4 scheme (APK Signature Scheme v4): false
 Verified for SourceStamp: false
 Number of signers: 1
 V2 Signer: certificate DN: CN=Independent Browser (temporary CI key)
-V2 Signer: certificate SHA-256 digest: 5c9046ca095f9b1cad76b13bc64c4e4a196f6ce7e579613229c6263500304409
-V2 Signer: certificate SHA-1 digest: 2d4a3b0c6171221c71e4431d8d94f306ecf5955b
-V2 Signer: certificate MD5 digest: 026ba9b5d019b7b9c075e4b32369b8fd
+V2 Signer: certificate SHA-256 digest: d798d15e79303b118ad50516d4e5d95be3d247c57a00da55d128d7b04e76639f
+V2 Signer: certificate SHA-1 digest: b8a6b7e643c54ae98f04bbda58fdac438775a4fc
+V2 Signer: certificate MD5 digest: 0c311ac01aed601d1e8a857bc766d2eb
 V2 Signer: key algorithm: RSA
 V2 Signer: key size (bits): 3072
-V2 Signer: public key SHA-256 digest: f12c02e8c8cdc9bb9d0ddc02745e1eb69524a5b09db1a1392488bc88718cd3f9
-V2 Signer: public key SHA-1 digest: 254104402711bcc92951673be1e997ab6a9b8f5e
-V2 Signer: public key MD5 digest: df4189621897a9934fd18ef684e52892
+V2 Signer: public key SHA-256 digest: 4504469410aef2df25865bcddbfa80848270fc9a9287f29ad2f6eae9856881bd
+V2 Signer: public key SHA-1 digest: 62c5c8c77e32f40b30a0b931e4ec5ef275100399
+V2 Signer: public key MD5 digest: 65ae6f6a641e3f4d985acff2b5db6ca6
 
 --- aapt2 dump badging (selected lines)
 package: name='io.github.lejiyo09.independentbrowser' versionCode='10000' versionName='1.0.0' platformBuildVersionName='15' platformBuildVersionCode='35' compileSdkVersion='35' compileSdkVersionCodename='15'
+minSdkVersion:'26'
 targetSdkVersion:'35'
 uses-permission: name='android.permission.INTERNET'
 uses-permission: name='android.permission.WRITE_EXTERNAL_STORAGE' maxSdkVersion='28'
@@ -54,6 +55,10 @@ uses-permission: name='io.github.lejiyo09.independentbrowser.DYNAMIC_RECEIVER_NO
 application-label:'독립 브라우저'
 launchable-activity: name='io.github.lejiyo09.independentbrowser.MainActivity'  label='' icon=''
 uses-permission: name='android.permission.READ_EXTERNAL_STORAGE' maxSdkVersion='28'
+feature-group: label=''
+  uses-feature-not-required: name='android.hardware.camera'
+  uses-feature-not-required: name='android.hardware.microphone'
+  uses-feature-not-required: name='android.hardware.touchscreen'
 supports-screens: 'small' 'normal' 'large' 'xlarge'
 densities: '160' '240' '320' '480' '640' '65534'
 
@@ -66,19 +71,32 @@ api_level=30
 android_release=11
 webview=Current WebView package (name, version): (com.google.android.webview, 83.0.4103.106)
 screen=Physical size: 2560x1800
-instrumentation=pass (OK (10 tests))
+instrumentation=FAIL
 release_install=pass
-release_launch=pass (pid 5421, no crash)
+release_launch=pass (pid 6579, no crash)
 release_page_rendered=pass (UI tree contains 'Example Domain')
 ```
 Instrumentation output (tail):
 ```
 
-io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest:..........
+io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest:........
+Error in invalidCertificateIsBlocked(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest):
+java.lang.AssertionError: Timed out after 45000ms waiting for: certificate error page
+	at io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest.waitUntil(BrowserInstrumentedTest.kt:190)
+	at io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest.waitUntil$default(BrowserInstrumentedTest.kt:184)
+	at io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest.invalidCertificateIsBlocked(BrowserInstrumentedTest.kt:115)
+.
 
-Time: 28.838
+Time: 81.682
+There was 1 failure:
+1) invalidCertificateIsBlocked(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
+java.lang.AssertionError: Timed out after 45000ms waiting for: certificate error page
+	at io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest.waitUntil(BrowserInstrumentedTest.kt:190)
+	at io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest.waitUntil$default(BrowserInstrumentedTest.kt:184)
+	at io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest.invalidCertificateIsBlocked(BrowserInstrumentedTest.kt:115)
 
-OK (10 tests)
+FAILURES!!!
+Tests run: 10,  Failures: 1
 
 
 ```
@@ -90,19 +108,32 @@ api_level=34
 android_release=14
 webview=Current WebView package (name, version): (com.google.android.webview, 113.0.5672.136)
 screen=Physical size: 2560x1800
-instrumentation=pass (OK (10 tests))
+instrumentation=FAIL
 release_install=pass
-release_launch=pass (pid 5555, no crash)
-release_page_rendered=unknown (WebView text not in accessibility tree)
+release_launch=pass (pid 6277, no crash)
+release_page_rendered=pass (UI tree contains 'Example Domain')
 ```
 Instrumentation output (tail):
 ```
 
-io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest:..........
+io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest:........
+Error in invalidCertificateIsBlocked(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest):
+java.lang.AssertionError: Timed out after 45000ms waiting for: certificate error page
+	at io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest.waitUntil(BrowserInstrumentedTest.kt:190)
+	at io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest.waitUntil$default(BrowserInstrumentedTest.kt:184)
+	at io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest.invalidCertificateIsBlocked(BrowserInstrumentedTest.kt:115)
+.
 
-Time: 70.208
+Time: 109.345
+There was 1 failure:
+1) invalidCertificateIsBlocked(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
+java.lang.AssertionError: Timed out after 45000ms waiting for: certificate error page
+	at io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest.waitUntil(BrowserInstrumentedTest.kt:190)
+	at io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest.waitUntil$default(BrowserInstrumentedTest.kt:184)
+	at io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest.invalidCertificateIsBlocked(BrowserInstrumentedTest.kt:115)
 
-OK (10 tests)
+FAILURES!!!
+Tests run: 10,  Failures: 1
 
 
 ```

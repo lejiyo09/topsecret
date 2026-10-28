@@ -1,0 +1,21 @@
+
+io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest:........
+Error in invalidCertificateIsBlocked(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest):
+java.lang.AssertionError: Timed out after 45000ms waiting for: certificate error page
+	at io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest.waitUntil(BrowserInstrumentedTest.kt:190)
+	at io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest.waitUntil$default(BrowserInstrumentedTest.kt:184)
+	at io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest.invalidCertificateIsBlocked(BrowserInstrumentedTest.kt:115)
+.
+
+Time: 81.682
+There was 1 failure:
+1) invalidCertificateIsBlocked(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
+java.lang.AssertionError: Timed out after 45000ms waiting for: certificate error page
+	at io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest.waitUntil(BrowserInstrumentedTest.kt:190)
+	at io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest.waitUntil$default(BrowserInstrumentedTest.kt:184)
+	at io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest.invalidCertificateIsBlocked(BrowserInstrumentedTest.kt:115)
+
+FAILURES!!!
+Tests run: 10,  Failures: 1
+
+
