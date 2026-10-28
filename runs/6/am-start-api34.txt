@@ -1,0 +1,7 @@
+Starting: Intent { act=android.intent.action.VIEW dat=https://example.com/... cmp=io.github.lejiyo09.independentbrowser/.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: io.github.lejiyo09.independentbrowser/.MainActivity
+TotalTime: 3645
+WaitTime: 3657
+Complete

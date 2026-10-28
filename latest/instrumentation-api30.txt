@@ -1,7 +1,7 @@
 
 io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest:..........
 
-Time: 35.706
+Time: 37.85
 
 OK (10 tests)
 

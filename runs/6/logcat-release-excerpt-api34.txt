@@ -1,0 +1,170 @@
+10-28 00:39:09.368  1060  1060 D CarrierSvcBindHelper: onPackageRemoved: io.github.lejiyo09.independentbrowser.debug
+10-28 00:39:09.387   522   766 W WifiService: Couldn't get PackageInfo for package:io.github.lejiyo09.independentbrowser.debug.test
+10-28 00:39:09.388   522   766 D WifiService: Remove settings for package:io.github.lejiyo09.independentbrowser.debug.test
+10-28 00:39:09.388   522   766 D WifiConfigManager: Remove all networks for app ApplicationInfo{b390536 io.github.lejiyo09.independentbrowser.debug.test}
+10-28 00:39:09.400   522   766 I PasspointManager: No app ops listener found for io.github.lejiyo09.independentbrowser.debug.test
+10-28 00:39:09.445   522   522 I ConditionProviders: Disallowing condition provider io.github.lejiyo09.independentbrowser.debug.test (userSet: true)
+10-28 00:39:09.458   522   637 V StorageManagerService: Package io.github.lejiyo09.independentbrowser.debug.test does not have legacy storage
+10-28 00:39:09.460   522   522 I Telecom : CarModeTracker: Package io.github.lejiyo09.independentbrowser.debug.test is not tracked.: SSH.oR@AP0🔒
+10-28 00:39:09.464   522   608 I RollbackManager: broadcast=ACTION_PACKAGE_FULLY_REMOVED pkg=io.github.lejiyo09.independentbrowser.debug.test
+10-28 00:39:09.467   522   766 W WifiService: Couldn't get PackageInfo for package:io.github.lejiyo09.independentbrowser.debug.test
+10-28 00:39:09.467   522   766 D WifiService: Remove settings for package:io.github.lejiyo09.independentbrowser.debug.test
+10-28 00:39:09.468   522   766 D WifiConfigManager: Remove all networks for app ApplicationInfo{f7d4dbe io.github.lejiyo09.independentbrowser.debug.test}
+10-28 00:39:09.475   522   766 I PasspointManager: No app ops listener found for io.github.lejiyo09.independentbrowser.debug.test
+10-28 00:39:09.555  1466  5424 I BlockstoreStorage: Clearing all the Blockstore Data for package io.github.lejiyo09.independentbrowser.debug.test [CONTEXT service_id=258 ]
+10-28 00:39:09.572  1466  1531 I Icing   : doRemovePackageData io.github.lejiyo09.independentbrowser.debug.test
+10-28 00:39:09.752  1466  5433 W SQLiteLog: (28) double-quoted string literal: "io.github.lejiyo09.independentbrowser.debug.test"
+10-28 00:39:09.774   522   552 W UsageStatsService: Unexpected activity event reported! (io.github.lejiyo09.independentbrowser.debug/io.github.lejiyo09.independentbrowser.MainActivity event : 23 instanceId : 63678245)
+10-28 00:39:09.797   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for user 0
+10-28 00:39:09.797   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for any user
+10-28 00:39:09.797   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for user 0
+10-28 00:39:09.797   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for any user
+10-28 00:39:09.837   843   843 D PersistedStoragePackageUninstalledReceiver: Received android.intent.action.PACKAGE_FULLY_REMOVED for io.github.lejiyo09.independentbrowser.debug.test for u0
+10-28 00:39:09.867   843   843 D PersistedStoragePackageUninstalledReceiver: Received android.intent.action.PACKAGE_FULLY_REMOVED for io.github.lejiyo09.independentbrowser.debug for u0
+10-28 00:39:10.199   522   637 V StorageManagerService: Package io.github.lejiyo09.independentbrowser.debug does not have legacy storage
+10-28 00:39:10.200   522   608 I RollbackManager: broadcast=ACTION_PACKAGE_FULLY_REMOVED pkg=io.github.lejiyo09.independentbrowser.debug
+10-28 00:39:10.200   522   766 W WifiService: Couldn't get PackageInfo for package:io.github.lejiyo09.independentbrowser.debug
+10-28 00:39:10.200   522   766 D WifiService: Remove settings for package:io.github.lejiyo09.independentbrowser.debug
+10-28 00:39:10.200   522   766 D WifiConfigManager: Remove all networks for app ApplicationInfo{84734c2 io.github.lejiyo09.independentbrowser.debug}
+10-28 00:39:10.207   522   522 I Telecom : CarModeTracker: Package io.github.lejiyo09.independentbrowser.debug is not tracked.: SSH.oR@AQA🔒
+10-28 00:39:10.211   522   766 I PasspointManager: No app ops listener found for io.github.lejiyo09.independentbrowser.debug
+10-28 00:39:10.211   522   766 W WifiService: Couldn't get PackageInfo for package:io.github.lejiyo09.independentbrowser.debug
+10-28 00:39:10.211   522   766 D WifiService: Remove settings for package:io.github.lejiyo09.independentbrowser.debug
+10-28 00:39:10.211   522   766 D WifiConfigManager: Remove all networks for app ApplicationInfo{8962a79 io.github.lejiyo09.independentbrowser.debug}
+10-28 00:39:10.214   522   766 I PasspointManager: No app ops listener found for io.github.lejiyo09.independentbrowser.debug
+10-28 00:39:10.224   522   522 I ConditionProviders: Disallowing condition provider io.github.lejiyo09.independentbrowser.debug (userSet: true)
+10-28 00:39:10.704   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for user 0
+10-28 00:39:10.704   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for any user
+10-28 00:39:10.704   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for user 0
+10-28 00:39:10.704   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for any user
+10-28 00:39:10.704  5371  5373 W ziparchive: Unable to open '/data/app/~~1PTRqMy8KvmL2enlyA4jtw==/io.github.lejiyo09.independentbrowser-05sESFxEV-caWe7CL3oFlQ==/base.dm': No such file or directory
+10-28 00:39:10.704  5371  5373 W ziparchive: Unable to open '/data/app/~~1PTRqMy8KvmL2enlyA4jtw==/io.github.lejiyo09.independentbrowser-05sESFxEV-caWe7CL3oFlQ==/base.dm': No such file or directory
+10-28 00:39:10.706   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug is not installed for user 0
+10-28 00:39:10.706   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug is not installed for any user
+10-28 00:39:10.706   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug is not installed for user 0
+10-28 00:39:10.706   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug is not installed for any user
+10-28 00:39:10.710   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for user 0
+10-28 00:39:10.710   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for any user
+10-28 00:39:10.710   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for user 0
+10-28 00:39:10.710   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for any user
+10-28 00:39:10.726  5371  5373 I artd    : Running dex2oat: /apex/com.android.art/bin/art_exec --drop-capabilities --set-task-profile=Dex2OatBootComplete --set-priority=background --keep-fds=7:8:9:10:11:12 -- /apex/com.android.art/bin/dex2oat64 --zip-fd=7 --zip-location=/data/app/~~1PTRqMy8KvmL2enlyA4jtw==/io.github.lejiyo09.independentbrowser-05sESFxEV-caWe7CL3oFlQ==/base.apk --oat-fd=8 --oat-location=/data/app/~~1PTRqMy8KvmL2enlyA4jtw==/io.github.lejiyo09.independentbrowser-05sESFxEV-caWe7CL3oFlQ==/oat/x86_64/base.odex --output-vdex-fd=9 --swap-fd=10 --class-loader-context-fds=11:12 --class-loader-context=PCL[]{PCL[/system_ext/framework/androidx.window.extensions.jar]#PCL[/system_ext/framework/androidx.window.sidecar.jar]} --classpath-dir=/data/app/~~1PTRqMy8KvmL2enlyA4jtw==/io.github.lejiyo09.independentbrowser-05sESFxEV-caWe7CL3oFlQ== --instruction-set=x86_64 --instruction-set-features=default --instruction-set-variant=x86_64 --compiler-filter=verify --compilation-reason=install --compact-dex-level=none --max-image-block-size=524288 --resolve-startup-const-strings=true --generate-mini-debug-info --runtime-arg -Xtarget-sdk-version:35 --runtime-arg -Xhidden-api-policy:enabled --runtime-arg -Xms64m --runtime-arg -Xmx512m --comments=app-version-name:1.0.1,app-version-code:10001,art-version:340818082
+10-28 00:39:10.726  5371  5373 I artd    : Opened FDs: 7:/data/app/~~1PTRqMy8KvmL2enlyA4jtw==/io.github.lejiyo09.independentbrowser-05sESFxEV-caWe7CL3oFlQ==/base.apk 8:/data/app/~~1PTRqMy8KvmL2enlyA4jtw==/io.github.lejiyo09.independentbrowser-05sESFxEV-caWe7CL3oFlQ==/oat/x86_64/base.odex.rN5BVE.tmp 9:/data/app/~~1PTRqMy8KvmL2enlyA4jtw==/io.github.lejiyo09.independentbrowser-05sESFxEV-caWe7CL3oFlQ==/oat/x86_64/base.vdex.6izX8S.tmp 10:/data/app/~~1PTRqMy8KvmL2enlyA4jtw==/io.github.lejiyo09.independentbrowser-05sESFxEV-caWe7CL3oFlQ==/oat/x86_64/base.odex.swap.4PTiyD.tmp 11:/system_ext/framework/androidx.window.sidecar.jar 12:/system_ext/framework/androidx.window.extensions.jar 
+10-28 00:39:10.898  5472  5472 W dex2oat64: /apex/com.android.art/bin/dex2oat64 --zip-fd=7 --zip-location=/data/app/~~1PTRqMy8KvmL2enlyA4jtw==/io.github.lejiyo09.independentbrowser-05sESFxEV-caWe7CL3oFlQ==/base.apk --oat-fd=8 --oat-location=/data/app/~~1PTRqMy8KvmL2enlyA4jtw==/io.github.lejiyo09.independentbrowser-05sESFxEV-caWe7CL3oFlQ==/oat/x86_64/base.odex --output-vdex-fd=9 --swap-fd=10 --class-loader-context-fds=11:12 --class-loader-context=PCL[]{PCL[/system_ext/framework/androidx.window.extensions.jar]#PCL[/system_ext/framework/androidx.window.sidecar.jar]} --classpath-dir=/data/app/~~1PTRqMy8KvmL2enlyA4jtw==/io.github.lejiyo09.independentbrowser-05sESFxEV-caWe7CL3oFlQ== --instruction-set=x86_64 --instruction-set-features=default --instruction-set-variant=x86_64 --compiler-filter=verify --compilation-reason=install --compact-dex-level=none --max-image-block-size=524288 --resolve-startup-const-strings=true --generate-mini-debug-info --runtime-arg -Xtarget-sdk-version:35 --runtime-arg -Xhidden-api-policy:enabled --runtime-arg -Xms64m --runtime-arg -Xmx512m --comments=app-version-name:1.0.1,app-version-code:10001,art-version:340818082
+10-28 00:39:10.898  5472  5472 I dex2oat64: /apex/com.android.art/bin/dex2oat64 --output-vdex-fd=9 --class-loader-context-fds=11:12 --class-loader-context=PCL[]{PCL[/system_ext/framework/androidx.window.extensions.jar]#PCL[/system_ext/framework/androidx.window.sidecar.jar]} --classpath-dir=/data/app/~~1PTRqMy8KvmL2enlyA4jtw==/io.github.lejiyo09.independentbrowser-05sESFxEV-caWe7CL3oFlQ== --compiler-filter=verify --compilation-reason=install --compact-dex-level=none --max-image-block-size=524288 --resolve-startup-const-strings=true --generate-mini-debug-info --comments=app-version-name:1.0.1,app-version-code:10001,art-version:340818082
+10-28 00:39:11.509   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug is not installed for user 0
+10-28 00:39:11.509   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug is not installed for any user
+10-28 00:39:11.509   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug is not installed for user 0
+10-28 00:39:11.509   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug is not installed for any user
+10-28 00:39:11.553   522   577 I ArtService: Dexopt result: [packageName = io.github.lejiyo09.independentbrowser] DexContainerFileDexoptResult{dexContainerFile=/data/app/~~1PTRqMy8KvmL2enlyA4jtw==/io.github.lejiyo09.independentbrowser-05sESFxEV-caWe7CL3oFlQ==/base.apk, primaryAbi=true, abi=x86_64, actualCompilerFilter=verify, status=PERFORMED, dex2oatWallTimeMillis=819, dex2oatCpuTimeMillis=270, sizeBytes=1366312, sizeBeforeBytes=0}
+10-28 00:39:11.554   522   577 V BackupManagerService: [UserID:0] restoreAtInstall pkg=io.github.lejiyo09.independentbrowser token=3 restoreSet=0
+10-28 00:39:11.786   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for user 0
+10-28 00:39:11.786   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for any user
+10-28 00:39:11.786   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for user 0
+10-28 00:39:11.786   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for any user
+10-28 00:39:11.810   522   600 V SplashScreenExceptionList: SplashScreen checking exception for package io.github.lejiyo09.independentbrowser (target sdk:35) -> false
+10-28 00:39:11.818   840   895 V WindowManagerShell: Transition requested: android.os.BinderProxy@6650a6b TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=28 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.VIEW dat=https://example.com/... flg=0x10000000 cmp=io.github.lejiyo09.independentbrowser/.MainActivity } baseActivity=ComponentInfo{io.github.lejiyo09.independentbrowser/io.github.lejiyo09.independentbrowser.MainActivity} topActivity=ComponentInfo{io.github.lejiyo09.independentbrowser/io.github.lejiyo09.independentbrowser.MainActivity} origActivity=null realActivity=ComponentInfo{io.github.lejiyo09.independentbrowser/io.github.lejiyo09.independentbrowser.MainActivity} numActivities=1 lastActiveTime=127840 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@bf439c8} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=ActivityInfo{947ba61 io.github.lejiyo09.independentbrowser.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-28 00:39:11.830   522   600 I ActivityTaskManager: START u0 {act=android.intent.action.VIEW dat=https://example.com/... flg=0x10000000 cmp=io.github.lejiyo09.independentbrowser/.MainActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-28 00:39:11.834   522  1951 D CoreBackPreview: Window{ba8d7fa u0 Splash Screen io.github.lejiyo09.independentbrowser}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@e3d1008, mPriority=0, mIsAnimationCallback=false}
+10-28 00:39:12.294  1060  1060 D CarrierSvcBindHelper: onPackageAdded: io.github.lejiyo09.independentbrowser
+10-28 00:39:12.313   843   843 I SafetyLabelChangedBroadcastReceiver: received broadcast packageName: io.github.lejiyo09.independentbrowser, current user: UserHandle{0}, packageChangeEvent: NEW_INSTALL, intent user: UserHandle{0}
+10-28 00:39:12.321   522   554 I ActivityManager: Start proc 5485:io.github.lejiyo09.independentbrowser/u0a194 for next-top-activity {io.github.lejiyo09.independentbrowser/io.github.lejiyo09.independentbrowser.MainActivity}
+10-28 00:39:12.332   522   811 I SdkSandboxManager: No SDKs used. Skipping SDK data reconcilation for CallingInfo{mUid=10194, mPackageName='io.github.lejiyo09.independentbrowser, mAppProcessToken='null'}
+10-28 00:39:12.619   522   541 V WindowManager: Sent Transition #36 createdAt=10-28 00:39:11.796 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=28 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.VIEW dat=https://example.com/... flg=0x10000000 cmp=io.github.lejiyo09.independentbrowser/.MainActivity } baseActivity=ComponentInfo{io.github.lejiyo09.independentbrowser/io.github.lejiyo09.independentbrowser.MainActivity} topActivity=ComponentInfo{io.github.lejiyo09.independentbrowser/io.github.lejiyo09.independentbrowser.MainActivity} origActivity=null realActivity=ComponentInfo{io.github.lejiyo09.independentbrowser/io.github.lejiyo09.independentbrowser.MainActivity} numActivities=1 lastActiveTime=127840 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{b4084c6 Task{91903bb #28 type=standard A=10194:io.github.lejiyo09.independentbrowser}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=ActivityInfo{a110c87 io.github.lejiyo09.independentbrowser.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-28 00:39:12.620   522   541 V WindowManager:     info={id=36 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{b4084c6 Task{91903bb #28 type=standard A=10194:io.github.lejiyo09.independentbrowser}}} m=OPEN f=NONE leash=Surface(name=Task=28)/@0xdef5b66 sb=Rect(0, 0 - 2560, 1800) eb=Rect(0, 0 - 2560, 1800) d=0},{WCT{RemoteToken{b51e411 Task{169d599 #1 type=home}}} m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0x943ce5f sb=Rect(0, 0 - 2560, 1800) eb=Rect(0, 0 - 2560, 1800) d=0}]}
+10-28 00:39:12.839  1060  1360 D ImsResolver: maybeAddedImsService, packageName: io.github.lejiyo09.independentbrowser
+10-28 00:39:12.940  5485  5485 D nativeloader: Configuring clns-6 for other apk /data/app/~~1PTRqMy8KvmL2enlyA4jtw==/io.github.lejiyo09.independentbrowser-05sESFxEV-caWe7CL3oFlQ==/base.apk. target_sdk_version=35, uses_libraries=, library_path=/data/app/~~1PTRqMy8KvmL2enlyA4jtw==/io.github.lejiyo09.independentbrowser-05sESFxEV-caWe7CL3oFlQ==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/io.github.lejiyo09.independentbrowser
+10-28 00:39:12.945  5485  5485 V GraphicsEnvironment: ANGLE GameManagerService for io.github.lejiyo09.independentbrowser: false
+10-28 00:39:12.945  5485  5485 V GraphicsEnvironment: io.github.lejiyo09.independentbrowser is not listed in per-application setting
+10-28 00:39:13.134  1060  1060 D CarrierSvcBindHelper: onPackageModified: io.github.lejiyo09.independentbrowser
+10-28 00:39:13.306   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug is not installed for user 0
+10-28 00:39:13.306   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug is not installed for any user
+10-28 00:39:13.306   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug is not installed for user 0
+10-28 00:39:13.306   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug is not installed for any user
+10-28 00:39:13.414  1060  1360 D ImsResolver: maybeAddedImsService, packageName: io.github.lejiyo09.independentbrowser
+10-28 00:39:13.445   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for user 0
+10-28 00:39:13.445   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for any user
+10-28 00:39:13.446   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for user 0
+10-28 00:39:13.446   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for any user
+10-28 00:39:14.067   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug is not installed for user 0
+10-28 00:39:14.067   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug is not installed for any user
+10-28 00:39:14.067   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug is not installed for user 0
+10-28 00:39:14.067   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug is not installed for any user
+10-28 00:39:14.101   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for user 0
+10-28 00:39:14.101   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for any user
+10-28 00:39:14.101   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for user 0
+10-28 00:39:14.101   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for any user
+10-28 00:39:14.289   522   911 D CoreBackPreview: Window{f9d02f1 u0 io.github.lejiyo09.independentbrowser/io.github.lejiyo09.independentbrowser.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@d1a986, mPriority=0, mIsAnimationCallback=false}
+10-28 00:39:15.445   522   541 I ActivityTaskManager: Displayed io.github.lejiyo09.independentbrowser/.MainActivity for user 0: +3s645ms
+10-28 00:39:15.634   522  2523 D CoreBackPreview: Window{ba8d7fa u0 Splash Screen io.github.lejiyo09.independentbrowser EXITING}: Setting back callback null
+10-28 00:39:15.647   522  1910 W InputManager-JNI: Input channel object 'ba8d7fa Splash Screen io.github.lejiyo09.independentbrowser (client)' was disposed without first being removed with the input manager!
+10-28 00:39:16.928   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug is not installed for user 0
+10-28 00:39:16.929   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug is not installed for any user
+10-28 00:39:16.930   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug is not installed for user 0
+10-28 00:39:16.951   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug is not installed for any user
+10-28 00:39:17.462   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for user 0
+10-28 00:39:17.477   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for any user
+10-28 00:39:17.477   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for user 0
+10-28 00:39:17.477   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for any user
+10-28 00:39:17.689   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug is not installed for user 0
+10-28 00:39:17.689   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug is not installed for any user
+10-28 00:39:17.689   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug is not installed for user 0
+10-28 00:39:17.689   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug is not installed for any user
+10-28 00:39:17.735   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for user 0
+10-28 00:39:17.735   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for any user
+10-28 00:39:17.735   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for user 0
+10-28 00:39:17.735   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for any user
+10-28 00:39:17.736   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug is not installed for user 0
+10-28 00:39:17.736   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug is not installed for any user
+10-28 00:39:17.736   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug is not installed for user 0
+10-28 00:39:17.736   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug is not installed for any user
+10-28 00:39:17.886   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for user 0
+10-28 00:39:17.886   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for any user
+10-28 00:39:17.886   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for user 0
+10-28 00:39:17.886   522   552 E AppHibernationService: Package io.github.lejiyo09.independentbrowser.debug.test is not installed for any user
+10-28 00:39:18.022  1099  1099 D Launcher.Model: package removed received io.github.lejiyo09.independentbrowser.debug.test
+10-28 00:39:18.025  1099  1149 D PackageUpdatedTask: Removing app iconio.github.lejiyo09.independentbrowser.debug.test
+10-28 00:39:18.028  1614  1614 I AiAiEcho: AppFetcherImplV2 onPackageRemoved io.github.lejiyo09.independentbrowser.debug.test.
+10-28 00:39:18.029  1099  1149 D ModelWriter: removing items from db . Reason: [removed because the corresponding package or component is removed. mOp=3 removedPackages=[io.github.lejiyo09.independentbrowser.debug.test] removedComponents=[]]
+10-28 00:39:18.057  1099  1099 D Launcher.Model: package removed received io.github.lejiyo09.independentbrowser.debug
+10-28 00:39:18.058  1614  1614 I AiAiEcho: AppFetcherImplV2 onPackageRemoved io.github.lejiyo09.independentbrowser.debug.
+10-28 00:39:18.060  1099  1149 D PackageUpdatedTask: Removing app iconio.github.lejiyo09.independentbrowser.debug
+10-28 00:39:18.072  1099  1149 D ModelWriter: removing items from db . Reason: [removed because the corresponding package or component is removed. mOp=3 removedPackages=[io.github.lejiyo09.independentbrowser.debug] removedComponents=[]]
+10-28 00:39:18.490  1614  1614 I AiAiEcho: AppFetcherImplV2 updateApps package:[io.github.lejiyo09.independentbrowser], userId:[0], reason:[package is added.].
+10-28 00:39:18.498  1614  1614 I AiAiEcho: AppFetcherImpl onPackageChanged io.github.lejiyo09.independentbrowser.
+10-28 00:39:18.500  1614  2635 I AiAiEcho: AppIndexer Package:[io.github.lejiyo09.independentbrowser] UserProfile:[0] Enabled:[true].
+10-28 00:39:18.500  1614  2635 I AiAiEcho: AppFetcherImplV2 updateApps package:[io.github.lejiyo09.independentbrowser], userId:[0], reason:[package is updated.].
+10-28 00:39:19.720  5485  5614 D ProfileInstaller: Installing profile for io.github.lejiyo09.independentbrowser
+10-28 00:39:20.372   522   604 W ProcessStats: Tracking association SourceState{acbe617 io.github.lejiyo09.independentbrowser/10194 BTop #5021} whose proc state 2 is better than process ProcessState{b7a2e8 com.google.android.gms.persistent/10131 pkg=com.google.android.gms} proc state 4 (2589 skipped)
+10-28 00:39:22.266  1620  2342 D MediaProvider: Deleted 0 Android/media items belonging to io.github.lejiyo09.independentbrowser.debug.test on /data/user/0/com.google.android.providers.media.module/databases/external.db
+10-28 00:39:22.267  1620  2342 D MediaGrants: Removed 0 media_grants for 0 user for io.github.lejiyo09.independentbrowser.debug.test. Reason: Package orphaned
+10-28 00:39:22.268  1620  2342 D MediaProvider: Deleted 0 Android/media items belonging to io.github.lejiyo09.independentbrowser.debug on /data/user/0/com.google.android.providers.media.module/databases/external.db
+10-28 00:39:22.268  1620  2342 D MediaGrants: Removed 0 media_grants for 0 user for io.github.lejiyo09.independentbrowser.debug. Reason: Package orphaned
+10-28 00:39:29.996  1466  5727 W zjm     : Couldn't find application info for package io.github.lejiyo09.independentbrowser.debug.test
+10-28 00:39:29.997  1466  4637 I PackageIntentOperation: android.content.pm.PackageManager$NameNotFoundException: io.github.lejiyo09.independentbrowser.debug.test
+10-28 00:39:30.023  1466  5424 I BlockstoreStorage: Clearing all the Blockstore Data for package io.github.lejiyo09.independentbrowser.debug [CONTEXT service_id=258 ]
+10-28 00:39:30.036  1466  5721 E Vision  : Failed to find package io.github.lejiyo09.independentbrowser.debug.test
+10-28 00:39:30.046  1466  5737 E Icing   : Package io.github.lejiyo09.independentbrowser.debug.test not found
+10-28 00:39:30.046  1466  5737 I Icing   : doRemovePackageData io.github.lejiyo09.independentbrowser.debug
+10-28 00:39:30.051  1466  5723 W SQLiteLog: (28) double-quoted string literal: "io.github.lejiyo09.independentbrowser.debug"
+10-28 00:39:30.071  1466  5727 I BlockstoreStorage: Clearing Blockstore Data for package io.github.lejiyo09.independentbrowser [CONTEXT service_id=258 ]
+10-28 00:39:30.106  1466  5723 E GmscoreIpa: Could not get app info for io.github.lejiyo09.independentbrowser.debug [CONTEXT service_id=255 ]
+10-28 00:39:30.106  1466  5723 E GmscoreIpa: android.content.pm.PackageManager$NameNotFoundException: io.github.lejiyo09.independentbrowser.debug
+10-28 00:39:30.111  1466  5696 E GmscoreIpa: Could not get app info for io.github.lejiyo09.independentbrowser.debug.test [CONTEXT service_id=255 ]
+10-28 00:39:30.111  1466  5696 E GmscoreIpa: android.content.pm.PackageManager$NameNotFoundException: io.github.lejiyo09.independentbrowser.debug.test
+10-28 00:39:30.144  1466  3062 E Icing   : Could not get app info for io.github.lejiyo09.independentbrowser.debug: android.content.pm.PackageManager$NameNotFoundException: io.github.lejiyo09.independentbrowser.debug
+10-28 00:39:30.148  1466  3784 E Icing   : Could not get app info for io.github.lejiyo09.independentbrowser.debug.test: android.content.pm.PackageManager$NameNotFoundException: io.github.lejiyo09.independentbrowser.debug.test
+10-28 00:39:30.286  1466  5738 E Icing   : Could not get app info for io.github.lejiyo09.independentbrowser.debug: android.content.pm.PackageManager$NameNotFoundException: io.github.lejiyo09.independentbrowser.debug
+10-28 00:39:30.286  1466  5738 I Icing   : doRemovePackageData io.github.lejiyo09.independentbrowser.debug
+10-28 00:39:30.286  1466  5738 E Icing   : Could not get app info for io.github.lejiyo09.independentbrowser.debug: android.content.pm.PackageManager$NameNotFoundException: io.github.lejiyo09.independentbrowser.debug
+10-28 00:39:30.287  1466  5738 E Icing   : Could not get app info for io.github.lejiyo09.independentbrowser.debug.test: android.content.pm.PackageManager$NameNotFoundException: io.github.lejiyo09.independentbrowser.debug.test
+10-28 00:39:30.287  1466  5738 I Icing   : doRemovePackageData io.github.lejiyo09.independentbrowser.debug.test
+10-28 00:39:30.287  1466  5738 E Icing   : Could not get app info for io.github.lejiyo09.independentbrowser.debug.test: android.content.pm.PackageManager$NameNotFoundException: io.github.lejiyo09.independentbrowser.debug.test
+10-28 00:39:31.005  1466  5358 E IcingInternalCorpora: Could not get app info for io.github.lejiyo09.independentbrowser.debug: android.content.pm.PackageManager$NameNotFoundException: io.github.lejiyo09.independentbrowser.debug
+10-28 00:39:31.022  1466  5358 E IcingInternalCorpora: Could not get app info for io.github.lejiyo09.independentbrowser.debug.test: android.content.pm.PackageManager$NameNotFoundException: io.github.lejiyo09.independentbrowser.debug.test
+10-28 00:39:35.329   522   577 I ActivityManager: Killing 4214:com.google.android.settings.intelligence/u0a118 (adj 0): change com.google.android.settings.intelligence
+10-28 00:39:42.330   132   132 I lowmemorykiller: lmkd data connection established
+10-28 00:39:42.358   132   132 I lowmemorykiller: Using psi monitors for memory pressure detection
+10-28 00:39:42.358   132   132 I lowmemorykiller: Properties reinitilized
+10-28 00:39:42.358  6024  6024 I lowmemorykiller: lmkd updated properties successfully
+10-28 00:39:42.358   132   132 I lowmemorykiller: lmkd data connection dropped
+10-28 00:39:42.358   132   132 I lowmemorykiller: closing lmkd data connection

@@ -1,14 +1,14 @@
-# CI report — run #5
+# CI report — run #6
 
-- commit: `cfc5988f91a08e414535cb11c61ab8fd093aedf7` (main, event: push)
-- run: https://github.com/lejiyo09/topsecret/actions/runs/40609026100
+- commit: `e213a8080b668a459fcdd4e131a7a37453060f40` (main, event: push)
+- run: https://github.com/lejiyo09/topsecret/actions/runs/40609668720
 - app version: 1.0.1 · release signing: ephemeral
 
 | job | result |
 |---|---|
 | build (compile, unit tests, lint, APKs) | success |
-| device-test (emulator API 30 + 34) | failure |
-| publish (GitHub Release) | skipped  |
+| device-test (emulator API 30 + 34) | success |
+| publish (GitHub Release) | success exists |
 
 ## JVM unit tests
 - tests: 16, failures: 0, errors: 0, skipped: 0
@@ -20,7 +20,7 @@
 ```
 file: app/build/outputs/apk/release/app-release.apk
 size_bytes: 1820792
-sha256: 794ea992d53e5f8310941a6f92f63ab795473a968ada95209e5cf5afb34dc45c
+sha256: 001db22d7a10cad0e2a6225f57b824a0ddec829abeb8fbf392e4f0cbb7e59616
 
 --- apksigner verify
 Verifies
@@ -33,14 +33,14 @@ Verified using v4 scheme (APK Signature Scheme v4): false
 Verified for SourceStamp: false
 Number of signers: 1
 V2 Signer: certificate DN: CN=Independent Browser (temporary CI key)
-V2 Signer: certificate SHA-256 digest: 348a5943cd004ce26c0f3aa8d3ccd2b149cc89ac49ce14e913027f23d587d4a9
-V2 Signer: certificate SHA-1 digest: 84f7656b6db86dbd10903c1bb5fbd5f5d5d33d41
-V2 Signer: certificate MD5 digest: 132cf19dcd2dca298094d52ff8a40765
+V2 Signer: certificate SHA-256 digest: 3126f2b978b8ef872baa62d30ed0cfea91286f43c1799acbcff69817114e444f
+V2 Signer: certificate SHA-1 digest: 3e01a97d849114f826baba00462d47957a80d68a
+V2 Signer: certificate MD5 digest: 723091c9c1cbdf1d531718435501df90
 V2 Signer: key algorithm: RSA
 V2 Signer: key size (bits): 3072
-V2 Signer: public key SHA-256 digest: 4d8d4b0de9c839b2018e2964582c7c34398ad84adfcb0635f8e5fa8187817318
-V2 Signer: public key SHA-1 digest: ba671718a1f8cbabfcd4baaf4b4c7decddc243a8
-V2 Signer: public key MD5 digest: bd2a7b6608b0b384879d3b15158564a0
+V2 Signer: public key SHA-256 digest: 83051d8f4eb1be8d487605478024f5dc1fee7ee91c3f66f9b6c5f19fc451585d
+V2 Signer: public key SHA-1 digest: cfef9ca288e32dae54789f57288489f2dfa606cf
+V2 Signer: public key MD5 digest: 7ec06153238a77979ef552bfecd7d77f
 
 --- aapt2 dump badging (selected lines)
 package: name='io.github.lejiyo09.independentbrowser' versionCode='10001' versionName='1.0.1' platformBuildVersionName='15' platformBuildVersionCode='35' compileSdkVersion='35' compileSdkVersionCodename='15'
@@ -73,7 +73,7 @@ webview=Current WebView package (name, version): (com.google.android.webview, 83
 screen=Physical size: 2560x1800
 instrumentation=pass (OK (10 tests))
 release_install=pass
-release_launch=pass (pid 6234, no crash)
+release_launch=pass (pid 5928 after 30 s, no crash)
 release_page_rendered=pass (UI tree contains 'Example Domain')
 ```
 Instrumentation output (tail):
@@ -81,7 +81,7 @@ Instrumentation output (tail):
 
 io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest:..........
 
-Time: 35.706
+Time: 37.85
 
 OK (10 tests)
 
@@ -97,7 +97,7 @@ webview=Current WebView package (name, version): (com.google.android.webview, 11
 screen=Physical size: 2560x1800
 instrumentation=pass (OK (10 tests))
 release_install=pass
-release_launch=FAIL (pid '')
+release_launch=pass (pid 5485 after 30 s, no crash)
 release_page_rendered=unknown (WebView text not in accessibility tree)
 ```
 Instrumentation output (tail):
@@ -105,7 +105,7 @@ Instrumentation output (tail):
 
 io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest:..........
 
-Time: 61.65
+Time: 66.643
 
 OK (10 tests)
 

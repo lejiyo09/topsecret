@@ -1,0 +1,98 @@
+10-28 00:38:33.161   492   918 I ActivityManager: Killing 4581:com.android.settings/1000 (adj 985): empty #17
+10-28 00:38:34.087   492  1877 I ActivityManager: Killing 4603:com.android.shell/2000 (adj 985): empty #17
+10-28 00:38:34.355   492   533 I ActivityManager: Force stopping io.github.lejiyo09.independentbrowser.debug appid=10167 user=-1: deletePackageX
+10-28 00:38:34.399   492   549 I PackageManager: Removing permission io.github.lejiyo09.independentbrowser.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION that used to be declared by io.github.lejiyo09.independentbrowser.debug
+10-28 00:38:34.411   492   549 W PackageManager: Removing dangling permission: io.github.lejiyo09.independentbrowser.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION from package io.github.lejiyo09.independentbrowser.debug
+10-28 00:38:35.200   492  4175 I BackgroundDexOptService: Pinning optimized code {io.github.lejiyo09.independentbrowser.debug.test, io.github.lejiyo09.independentbrowser.debug, android}
+10-28 00:38:35.201   492  4175 D IorapForwardingService: onPackagesUpdated: io.github.lejiyo09.independentbrowser.debug.test
+10-28 00:38:35.207   492  4175 D IorapForwardingService: onPackagesUpdated: io.github.lejiyo09.independentbrowser.debug
+10-28 00:38:35.736  1293  1334 W AppInfoHelper: Application not found: io.github.lejiyo09.independentbrowser.debug
+10-28 00:38:35.736  1293  1334 W AppInfoHelper: android.content.pm.PackageManager$NameNotFoundException: io.github.lejiyo09.independentbrowser.debug
+10-28 00:38:35.781   492  2033 I ActivityManager: Killing 4623:com.android.traceur/u0a102 (adj 985): empty #17
+10-28 00:38:35.879   492  1786 I ActivityManager: Killing 3630:com.google.android.apps.docs/u0a140 (adj 985): empty #17
+10-28 00:38:36.026   492   549 I ActivityManager: Force stopping io.github.lejiyo09.independentbrowser.debug appid=10167 user=0: pkg removed
+10-28 00:38:36.041  1677  1677 I MediaProvider: Invalidating LocalCallingIdentity cache for package io.github.lejiyo09.independentbrowser.debug. Reason: package android.intent.action.PACKAGE_REMOVED
+10-28 00:38:36.041   492   599 V StorageManagerService: Package io.github.lejiyo09.independentbrowser.debug does not have legacy storage
+10-28 00:38:36.042  1737  1737 I GsaVoiceInteractionSrv: O received Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:io.github.lejiyo09.independentbrowser.debug flg=0x4000010 (has extras) }
+10-28 00:38:36.060  1182  1182 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=io.github.lejiyo09.independentbrowser.debug]
+10-28 00:38:36.070   492   583 I RollbackManager: broadcast=ACTION_PACKAGE_FULLY_REMOVED pkg=io.github.lejiyo09.independentbrowser.debug
+10-28 00:38:36.108  1378  5130 W SQLiteLog: (28) double-quoted string literal: "io.github.lejiyo09.independentbrowser.debug"
+10-28 00:38:36.159   492   492 W WifiService: Couldn't get PackageInfo for package:io.github.lejiyo09.independentbrowser.debug
+10-28 00:38:36.159   492   492 D WifiService: Remove settings for package:io.github.lejiyo09.independentbrowser.debug
+10-28 00:38:36.160   492   640 D WifiConfigManager: Remove all networks for app ApplicationInfo{ae0c9f2 io.github.lejiyo09.independentbrowser.debug}
+10-28 00:38:36.166   492   640 I PasspointManager: No app ops listener found for io.github.lejiyo09.independentbrowser.debug
+10-28 00:38:36.281   492   492 W WifiService: Couldn't get PackageInfo for package:io.github.lejiyo09.independentbrowser.debug
+10-28 00:38:36.281   492   492 D WifiService: Remove settings for package:io.github.lejiyo09.independentbrowser.debug
+10-28 00:38:36.283   492   640 D WifiConfigManager: Remove all networks for app ApplicationInfo{5e2ec46 io.github.lejiyo09.independentbrowser.debug}
+10-28 00:38:36.285   492  1961 I ActivityManager: Killing 4690:com.google.android.apps.maps/u0a136 (adj 935): empty #17
+10-28 00:38:36.291   492   492 I ConditionProviders: Disallowing condition provider io.github.lejiyo09.independentbrowser.debug
+10-28 00:38:36.326   492   640 I PasspointManager: No app ops listener found for io.github.lejiyo09.independentbrowser.debug
+10-28 00:38:36.384  1378  3075 I Icing   : doRemovePackageData io.github.lejiyo09.independentbrowser.debug [CONTEXT service_id=21 ]
+10-28 00:38:36.415   946   946 D Launcher.Model: package removed received io.github.lejiyo09.independentbrowser.debug
+10-28 00:38:36.415   946   990 D PackageUpdatedTask: Removing app iconio.github.lejiyo09.independentbrowser.debug
+10-28 00:38:37.017   492   549 I PackageDexOptimizer: Running dexopt (dexoptNeeded=1) on: /data/app/~~3OC5QOWfwJ-qKJtnLHOhQg==/io.github.lejiyo09.independentbrowser-qqV_JyhDdPIzwsQ2tKUkqg==/base.apk pkg=io.github.lejiyo09.independentbrowser isa=x86_64 dexoptFlags=boot_complete,profile_guided,public,enable_hidden_api_checks targetFilter=speed-profile oatDir=/data/app/~~3OC5QOWfwJ-qKJtnLHOhQg==/io.github.lejiyo09.independentbrowser-qqV_JyhDdPIzwsQ2tKUkqg==/oat classLoaderContext=PCL[]{PCL[/system_ext/framework/androidx.window.sidecar.jar]}
+10-28 00:38:37.018   423   569 V installd: DexInv: --- BEGIN '/data/app/~~3OC5QOWfwJ-qKJtnLHOhQg==/io.github.lejiyo09.independentbrowser-qqV_JyhDdPIzwsQ2tKUkqg==/base.apk' ---
+10-28 00:38:37.345  5585  5585 I dex2oat32: /apex/com.android.art/bin/dex2oat32 --input-vdex-fd=-1 --output-vdex-fd=9 --updatable-bcp-packages-file=/system/etc/updatable-bcp-packages.txt --resolve-startup-const-strings=true --max-image-block-size=524288 --compiler-filter=speed-profile --classpath-dir=/data/app/~~3OC5QOWfwJ-qKJtnLHOhQg==/io.github.lejiyo09.independentbrowser-qqV_JyhDdPIzwsQ2tKUkqg== --class-loader-context=PCL[]{PCL[/system_ext/framework/androidx.window.sidecar.jar]} --generate-mini-debug-info --compact-dex-level=none --compilation-reason=install
+10-28 00:38:37.901   492  1961 I ActivityManager: Killing 1748:com.google.android.apps.messaging:rcs/u0a144 (adj 975): empty #17
+10-28 00:38:38.383   492   828 I ActivityManager: Killing 4796:com.google.android.apps.wallpaper/u0a151 (adj 985): empty #17
+10-28 00:38:38.397   492  2048 I ActivityManager: Killing 4417:com.google.android.calendar/u0a145 (adj 945): empty #17
+10-28 00:38:39.046   492  1548 I ActivityManager: Killing 4938:com.google.android.configupdater/u0a118 (adj 985): empty #17
+10-28 00:38:39.439   492   840 I ActivityManager: Killing 4985:com.google.android.deskclock/u0a128 (adj 975): empty #17
+10-28 00:38:39.509   492  2221 I ActivityManager: Killing 5093:com.android.chrome/u0a130 (adj 985): empty #17
+10-28 00:38:40.111   423   569 V installd: DexInv: --- END '/data/app/~~3OC5QOWfwJ-qKJtnLHOhQg==/io.github.lejiyo09.independentbrowser-qqV_JyhDdPIzwsQ2tKUkqg==/base.apk' (success) ---
+10-28 00:38:40.185  1677  1677 I MediaProvider: Invalidating LocalCallingIdentity cache for package io.github.lejiyo09.independentbrowser. Reason: package android.intent.action.PACKAGE_ADDED
+10-28 00:38:40.186  1737  1737 I GsaVoiceInteractionSrv: O received Intent { act=android.intent.action.PACKAGE_ADDED dat=package:io.github.lejiyo09.independentbrowser flg=0x4000010 (has extras) }
+10-28 00:38:40.187   692   692 D AvrcpMediaPlayerList: Name of package changed: io.github.lejiyo09.independentbrowser
+10-28 00:38:40.247   492   565 I ActivityTaskManager: START u0 {act=android.intent.action.VIEW dat=https://example.com/... flg=0x10000000 cmp=io.github.lejiyo09.independentbrowser/.MainActivity} from uid 2000
+10-28 00:38:40.283   492   534 I ActivityManager: Start proc 5928:io.github.lejiyo09.independentbrowser/u0a169 for pre-top-activity {io.github.lejiyo09.independentbrowser/io.github.lejiyo09.independentbrowser.MainActivity}
+10-28 00:38:40.833  5928  5928 I TetheringManager: registerTetheringEventCallback:io.github.lejiyo09.independentbrowser
+10-28 00:38:41.013  1182  5121 W GCM     : Unexpected forwarded intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:io.github.lejiyo09.independentbrowser flg=0x4000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) }
+10-28 00:38:41.031  1378  5130 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:io.github.lejiyo09.independentbrowser flg=0x4000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-28 00:38:41.064  1182  5090 W GCM     : Unexpected forwarded intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:io.github.lejiyo09.independentbrowser flg=0x4000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) }
+10-28 00:38:41.117  1378  5130 I ChromeSync: [Persistence,AffiliationManager] One of affiliation or grouping data for android://EwRZ1NJV5j8GvFYqxyMRhrLOND8N2ML3znznIdoQxD5K6k-frKlsrE5gdf1meuVRv3pJI_XGiRPHNZA0UgjRFA==@io.github.lejiyo09.independentbrowser/ was not found. Marking affiliation data as stale...
+10-28 00:38:42.559   492  2223 I ActivityManager: Killing 5124:com.google.android.onetimeinitializer/u0a150 (adj 975): empty #17
+10-28 00:38:43.434   492  2046 I ActivityManager: Killing 5164:com.google.android.gm/u0a134 (adj 985): empty #17
+10-28 00:38:43.970   492   532 D ArtManagerInternalImpl: /data/misc/iorapd/io.github.lejiyo09.independentbrowser/10001/io.github.lejiyo09.independentbrowser.MainActivity/compiled_traces/compiled_trace.pb doesn't exist
+10-28 00:38:43.985   492   532 I ActivityTaskManager: Displayed io.github.lejiyo09.independentbrowser/.MainActivity: +1s860ms
+10-28 00:38:44.749   492  2214 I ActivityManager: Killing 5226:com.google.android.packageinstaller/u0a88 (adj 985): empty #17
+10-28 00:38:45.015   492   521 I ActivityManager: Killing 5475:com.google.android.setupwizard/u0a115 (adj 975): empty #17
+10-28 00:38:45.309   492  1758 I ActivityManager: Killing 5149:com.android.keychain/1000 (adj 985): empty #17
+10-28 00:38:46.190   425  5924 I iorapd  : Perfetto TraceBuffer saved to file: /data/misc/iorapd/io.github.lejiyo09.independentbrowser/10001/io.github.lejiyo09.independentbrowser.MainActivity/raw_traces/1793147925932773336.perfetto_trace.pb
+10-28 00:38:46.279  5928  6262 D ProfileInstaller: Installing profile for io.github.lejiyo09.independentbrowser
+10-28 00:38:46.326   492  2030 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:io.github.lejiyo09.independentbrowser.debug.test flg=0x4000010 (has extras) } to com.android.musicfx/.Compatibility$Receiver
+10-28 00:38:46.327   492   533 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:io.github.lejiyo09.independentbrowser.debug.test flg=0x4000010 (has extras) } to com.google.android.apps.maps/com.google.android.libraries.social.peoplekit.thirdparty.viewcontrollers.ThirdPartyReceiver
+10-28 00:38:46.327   492   533 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:io.github.lejiyo09.independentbrowser.debug.test flg=0x4000010 (has extras) } to com.google.android.apps.photos/com.google.android.libraries.social.peoplekit.thirdparty.viewcontrollers.ThirdPartyReceiver
+10-28 00:38:46.327   492   533 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:io.github.lejiyo09.independentbrowser.debug.test flg=0x4000010 (has extras) } to com.google.android.gms/.games.chimera.GamesSystemBroadcastReceiverProxy
+10-28 00:38:46.327   492   533 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:io.github.lejiyo09.independentbrowser.debug.test flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+10-28 00:38:46.327   492   533 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:io.github.lejiyo09.independentbrowser.debug.test flg=0x4000010 (has extras) } to com.google.android.googlequicksearchbox/com.google.android.apps.gsa.googlequicksearchbox.GelStubAppWatcher
+10-28 00:38:46.435   492   847 I ActivityManager: Killing 5500:com.google.android.syncadapters.contacts/u0a142 (adj 985): empty #17
+10-28 00:38:46.647   492   847 I ActivityManager: Killing 5531:com.google.android.videos/u0a143 (adj 985): empty #17
+10-28 00:38:46.928   492  1758 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:io.github.lejiyo09.independentbrowser.debug flg=0x4000010 (has extras) } to com.android.musicfx/.Compatibility$Receiver
+10-28 00:38:46.929   492   533 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:io.github.lejiyo09.independentbrowser.debug flg=0x4000010 (has extras) } to com.google.android.apps.maps/com.google.android.libraries.social.peoplekit.thirdparty.viewcontrollers.ThirdPartyReceiver
+10-28 00:38:46.929   492   533 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:io.github.lejiyo09.independentbrowser.debug flg=0x4000010 (has extras) } to com.google.android.apps.photos/com.google.android.libraries.social.peoplekit.thirdparty.viewcontrollers.ThirdPartyReceiver
+10-28 00:38:46.929   492   533 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:io.github.lejiyo09.independentbrowser.debug flg=0x4000010 (has extras) } to com.google.android.gms/.games.chimera.GamesSystemBroadcastReceiverProxy
+10-28 00:38:46.929   492   533 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:io.github.lejiyo09.independentbrowser.debug flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+10-28 00:38:46.929   492   533 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:io.github.lejiyo09.independentbrowser.debug flg=0x4000010 (has extras) } to com.google.android.googlequicksearchbox/com.google.android.apps.gsa.googlequicksearchbox.GelStubAppWatcher
+10-28 00:38:47.957   492  2031 I ActivityManager: Killing 5622:com.google.android.youtube/u0a147 (adj 985): empty #17
+10-28 00:38:48.458   492  1786 I ActivityManager: Killing 2506:com.google.android.partnersetup/u0a116 (adj 985): empty #17
+10-28 00:38:48.486   492  1786 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:io.github.lejiyo09.independentbrowser flg=0x4000010 (has extras) } to com.google.android.packageinstaller/com.android.packageinstaller.PackageInstalledReceiver
+10-28 00:38:48.486   492   533 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:io.github.lejiyo09.independentbrowser flg=0x4000010 (has extras) } to com.google.android.gms/.games.chimera.GamesSystemBroadcastReceiverProxy
+10-28 00:38:48.486   492   533 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:io.github.lejiyo09.independentbrowser flg=0x4000010 (has extras) } to com.google.android.gms/.gass.chimera.PackageChangeBroadcastReceiver
+10-28 00:38:48.486   492   533 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:io.github.lejiyo09.independentbrowser flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+10-28 00:38:48.486   492   533 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:io.github.lejiyo09.independentbrowser flg=0x4000010 (has extras) } to com.google.android.googlequicksearchbox/com.google.android.apps.gsa.googlequicksearchbox.GelStubAppWatcher
+10-28 00:38:48.487   492   533 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:io.github.lejiyo09.independentbrowser flg=0x4000010 (has extras) } to com.google.android.ims/.receivers.RcsAutoStartReceiver
+10-28 00:38:48.600   492  1279 I ActivityManager: Killing 2970:com.google.android.gms.unstable/u0a122 (adj 985): empty #17
+10-28 00:38:51.105   492  1279 I ActivityManager: Killing 5193:com.google.android.gms.ui/u0a122 (adj 985): empty #17
+10-28 00:38:51.585  1677  3290 I MediaProvider: Begin Intent { act=android.intent.action.PACKAGE_FULLY_REMOVED dat=package:io.github.lejiyo09.independentbrowser.debug.test flg=0x5000010 cmp=com.google.android.providers.media.module/com.android.providers.media.MediaService (has extras) }
+10-28 00:38:51.586  1677  3290 I MediaProvider: End Intent { act=android.intent.action.PACKAGE_FULLY_REMOVED dat=package:io.github.lejiyo09.independentbrowser.debug.test flg=0x5000010 cmp=com.google.android.providers.media.module/com.android.providers.media.MediaService (has extras) }
+10-28 00:38:51.586  1677  3290 I MediaProvider: Begin Intent { act=android.intent.action.PACKAGE_FULLY_REMOVED dat=package:io.github.lejiyo09.independentbrowser.debug flg=0x5000010 cmp=com.google.android.providers.media.module/com.android.providers.media.MediaService (has extras) }
+10-28 00:38:51.587  1677  3290 I MediaProvider: End Intent { act=android.intent.action.PACKAGE_FULLY_REMOVED dat=package:io.github.lejiyo09.independentbrowser.debug flg=0x5000010 cmp=com.google.android.providers.media.module/com.android.providers.media.MediaService (has extras) }
+10-28 00:38:53.270   492   533 I ActivityManager: Killing 5963:com.google.android.webview:webview_service/u0a146 (adj 985): empty #17
+10-28 00:38:55.318   492   565 I ActivityManager: Killing 5820:com.google.android.apps.pixelmigrate/u0a112 (adj 965): empty #17
+10-28 00:38:56.127   492  1770 I ActivityManager: Killing 5851:com.google.android.apps.restore/u0a120 (adj 965): empty #17
+10-28 00:38:57.457   492  2222 I ActivityManager: Killing 1522:android.process.acore/u0a79 (adj 985): empty #17
+10-28 00:38:59.230   492  1770 I ActivityManager: Killing 5325:com.google.android.projection.gearhead:shared/u0a117 (adj 985): empty #17
+10-28 00:39:03.018   492  2033 I ActivityManager: Killing 5437:com.google.android.projection.gearhead:car/u0a117 (adj 935): empty #17
+10-28 00:39:03.448   492  1279 I ActivityManager: Killing 4840:com.google.android.apps.youtube.music/u0a139 (adj 985): empty #17
+10-28 00:39:05.857   492  1279 I ActivityManager: Killing 3524:com.google.android.apps.messaging/u0a144 (adj 985): empty #17
+10-28 00:39:09.594   492  2024 I ActivityManager: Killing 3296:com.android.providers.calendar/u0a84 (adj 985): empty #17
