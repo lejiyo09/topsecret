@@ -89,6 +89,9 @@ cp "$A"/device-api*/release-smoke-api*.png "$R/" 2>/dev/null || true
 cp "$A"/device-api*/instrumentation-api*.txt "$R/" 2>/dev/null || true
 cp "$A"/device-api*/crash-buffer-api*.txt "$R/" 2>/dev/null || true
 cp "$A"/device-api*/logcat-excerpt-api*.txt "$R/" 2>/dev/null || true
+cp "$A"/device-api*/logcat-release-excerpt-api*.txt "$R/" 2>/dev/null || true
+cp "$A"/device-api*/am-start-api*.txt "$R/" 2>/dev/null || true
+cp "$A"/device-api*/pid-trace-api*.txt "$R/" 2>/dev/null || true
 tail -n 400 "$A/build-output/ci-out/gradle-build.log" > "$R/gradle-build-tail.log" 2>/dev/null || true
 cat "$R/README.md"
 

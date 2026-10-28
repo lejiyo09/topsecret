@@ -46,16 +46,26 @@ else
   status=1
 fi
 adb shell am start -W -a android.intent.action.VIEW -d "https://example.com/" -n "$APP_ID/.MainActivity" \
-  | tr -d '\r' > "$OUT/am-start-api$API.txt" 2>&1
-sleep 20
-pid="$(adb shell pidof "$APP_ID" | tr -d '\r')"
+  2>&1 | tr -d '\r' > "$OUT/am-start-api$API.txt"
+# Sample the process every 2 s for 30 s so a late death is distinguishable from a launch that never happened.
+seen=0
+pid=""
+: > "$OUT/pid-trace-api$API.txt"
+for i in $(seq 1 15); do
+  sleep 2
+  pid="$(adb shell pidof "$APP_ID" | tr -d '\r')"
+  echo "t=$((i * 2))s pid='$pid'" >> "$OUT/pid-trace-api$API.txt"
+  [ -n "$pid" ] && seen=1
+done
 adb exec-out screencap -p > "$OUT/release-smoke-api$API.png"
 adb logcat -d -b crash > "$OUT/crash-buffer-api$API.txt" 2>&1
 adb logcat -d > "$OUT/logcat-release-api$API.txt"
+grep -E "$APP_ID|ANR in|lowmemorykiller|Force stopping|has died|Killing" "$OUT/logcat-release-api$API.txt" \
+  | grep -vE "chromium|cr_" | tail -n 200 > "$OUT/logcat-release-excerpt-api$API.txt" || true
 if [ -n "$pid" ] && ! grep -q "$APP_ID" "$OUT/crash-buffer-api$API.txt"; then
-  echo "release_launch=pass (pid $pid, no crash)" >> "$SUMMARY"
+  echo "release_launch=pass (pid $pid after 30 s, no crash)" >> "$SUMMARY"
 else
-  echo "release_launch=FAIL (pid '$pid')" >> "$SUMMARY"
+  echo "release_launch=FAIL (seen_running=$seen, pid at 30 s='$pid')" >> "$SUMMARY"
   status=1
 fi
 if grep -q "Example Domain" <(adb shell uiautomator dump /sdcard/ui.xml > /dev/null 2>&1; adb shell cat /sdcard/ui.xml); then
