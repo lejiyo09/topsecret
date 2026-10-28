@@ -450,7 +450,8 @@ class MainActivity : AppCompatActivity(), TabHost {
         }
     }
 
-    private fun bindTabItem(tab: BrowserTab, item: ItemTabBinding = tabViews[tab.id] ?: return) {
+    private fun bindTabItem(tab: BrowserTab, itemBinding: ItemTabBinding? = null) {
+        val item = itemBinding ?: tabViews[tab.id] ?: return
         val title = tabTitle(tab)
         item.tabTitle.text = title
         item.root.isSelected = tab === currentTab
