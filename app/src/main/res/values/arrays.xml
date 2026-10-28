@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="search_engine_names">
+        <item>Google</item>
+        <item>DuckDuckGo</item>
+        <item>Bing</item>
+        <item>네이버</item>
+    </string-array>
+    <string-array name="search_engine_keys">
+        <item>google</item>
+        <item>duckduckgo</item>
+        <item>bing</item>
+        <item>naver</item>
+    </string-array>
+</resources>

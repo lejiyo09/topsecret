@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand">#1E6A8D</color>
+    <color name="tab_bar">#E3E8EC</color>
+    <color name="tab_selected">#FFFFFF</color>
+    <color name="toolbar">#FFFFFF</color>
+    <color name="address_bg">#EEF1F4</color>
+    <color name="icon">#3C4043</color>
+    <color name="text_secondary">#5F6368</color>
+    <color name="secure">#1E8E3E</color>
+    <color name="danger">#C5221F</color>
+    <color name="launcher_bg">#1E6A8D</color>
+</resources>

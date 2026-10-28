@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Trust only the system certificate store (no user-added CAs) for the app's own
+  connections. Plain http:// must stay allowed because this is a general web
+  browser; such pages are labelled "not secure" in the address bar.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

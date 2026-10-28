@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="address_hint">검색어 또는 URL 입력</string>
+    <string name="new_tab">새 탭</string>
+    <string name="new_tab_shortcut">새 탭 (Ctrl+T)</string>
+    <string name="reopen_tab">닫은 탭 다시 열기 (Ctrl+Shift+T)</string>
+    <string name="close_tab">탭 닫기</string>
+    <string name="close_tab_named">%1$s 탭 닫기</string>
+    <string name="back">뒤로 (Alt+←)</string>
+    <string name="forward">앞으로 (Alt+→)</string>
+    <string name="reload">새로고침 (Ctrl+R)</string>
+    <string name="stop">중지 (Esc)</string>
+    <string name="home">홈</string>
+    <string name="menu">메뉴</string>
+    <string name="site_info">사이트 정보</string>
+    <string name="bookmark_add">북마크 추가 (Ctrl+D)</string>
+    <string name="bookmark_remove">북마크 삭제 (Ctrl+D)</string>
+    <string name="bookmark_added">북마크에 추가했습니다</string>
+    <string name="bookmark_removed">북마크에서 삭제했습니다</string>
+    <string name="bookmark_not_web">웹 페이지만 북마크할 수 있습니다</string>
+    <string name="bookmarks">북마크 (Ctrl+Shift+O)</string>
+    <string name="bookmarks_title">북마크</string>
+    <string name="history">방문 기록 (Ctrl+H)</string>
+    <string name="history_title">방문 기록</string>
+    <string name="find_in_page">페이지에서 찾기 (Ctrl+F)</string>
+    <string name="find_hint">페이지에서 찾기</string>
+    <string name="find_prev">이전 결과</string>
+    <string name="find_next">다음 결과</string>
+    <string name="find_close">찾기 닫기</string>
+    <string name="find_count">%1$d/%2$d</string>
+    <string name="desktop_site">데스크톱 사이트</string>
+    <string name="settings">설정</string>
+    <string name="about">정보 및 단축키</string>
+    <string name="zoom_in">확대 (Ctrl+=)</string>
+    <string name="zoom_out">축소 (Ctrl+-)</string>
+    <string name="search_entries">검색</string>
+    <string name="clear_all">전체 삭제</string>
+    <string name="delete">삭제</string>
+    <string name="empty_history">방문 기록이 없습니다</string>
+    <string name="empty_bookmarks">북마크가 없습니다</string>
+    <string name="confirm_clear_history">방문 기록을 모두 삭제할까요?</string>
+    <string name="untitled">(제목 없음)</string>
+    <string name="tab_blank">새 탭</string>
+    <string name="tab_security_error">보안 오류</string>
+
+    <string name="clear_data_title">인터넷 사용 기록 삭제</string>
+    <string name="clear_data_history">방문 기록</string>
+    <string name="clear_data_cookies">쿠키 및 사이트 데이터 (로그인 세션 포함)</string>
+    <string name="clear_data_cache">캐시된 이미지 및 파일</string>
+    <string name="clear_data_forms">자동완성 양식 데이터 및 HTTP 인증 정보</string>
+    <string name="clear_data_confirm">삭제</string>
+    <string name="clear_data_done">이 앱에 저장된 선택 항목을 삭제했습니다.\n\n주의: Google 계정의 \'내 활동\'처럼 웹사이트나 서비스의 서버에 저장된 기록, 그리고 학교·회사 네트워크나 인터넷 사업자가 남기는 기록은 이 앱에서 삭제하거나 막을 수 없습니다.</string>
+
+    <string name="external_title">외부 앱으로 열기</string>
+    <string name="external_message">이 링크는 브라우저 밖의 앱에서 열립니다.\n\n%1$s</string>
+    <string name="external_open">열기</string>
+    <string name="external_no_app">이 링크를 열 수 있는 앱이 없습니다</string>
+    <string name="external_blocked">보안상 이 형식의 링크는 열 수 없습니다</string>
+
+    <string name="download_title">파일 다운로드</string>
+    <string name="download_confirm">다운로드</string>
+    <string name="download_file">파일: %1$s</string>
+    <string name="download_size">크기: %1$s</string>
+    <string name="download_size_unknown">크기: 알 수 없음</string>
+    <string name="download_source">출처: %1$s</string>
+    <string name="download_insecure_warning">⚠ 암호화되지 않은 연결(http)에서 받는 파일입니다. 전송 중 변조될 수 있습니다.</string>
+    <string name="download_dangerous_warning">⚠ 실행 파일 또는 설치 파일(.%1$s)입니다. 신뢰할 수 있는 출처인지 확인하세요.</string>
+    <string name="download_destination">저장 위치: 다운로드 폴더</string>
+    <string name="download_started">다운로드를 시작했습니다: %1$s</string>
+    <string name="download_failed">다운로드를 시작하지 못했습니다</string>
+    <string name="download_unsupported_scheme">이 형식(blob/data 등)의 다운로드는 지원하지 않습니다</string>
+    <string name="download_permission_denied">저장소 권한이 없어 다운로드할 수 없습니다</string>
+
+    <string name="ssl_error_title">연결이 안전하지 않아 차단했습니다</string>
+    <string name="ssl_error_body">이 사이트의 보안 인증서를 확인할 수 없습니다. 공격자가 정보를 가로채려는 것일 수 있으므로 이 브라우저는 인증서 오류가 있는 사이트를 열지 않습니다.</string>
+    <string name="ssl_error_expired">인증서가 만료되었습니다.</string>
+    <string name="ssl_error_not_yet_valid">인증서가 아직 유효하지 않습니다.</string>
+    <string name="ssl_error_mismatch">인증서의 도메인 이름이 이 사이트와 일치하지 않습니다.</string>
+    <string name="ssl_error_untrusted">신뢰할 수 없는 기관이 발급한 인증서입니다.</string>
+    <string name="ssl_error_date_invalid">인증서 날짜가 올바르지 않습니다.</string>
+    <string name="ssl_error_generic">인증서가 올바르지 않습니다.</string>
+
+    <string name="site_info_secure">🔒 보안 연결 (HTTPS)\n인증서 확인을 통과했습니다.</string>
+    <string name="site_info_insecure">⚠ 안전하지 않은 연결 (HTTP)\n이 사이트에 입력하는 정보는 암호화되지 않습니다.</string>
+    <string name="site_info_blocked">⛔ 인증서 오류로 차단됨\n%1$s</string>
+    <string name="site_info_other">내부 페이지</string>
+    <string name="site_info_cert">발급 대상: %1$s\n발급자: %2$s\n유효 기간: %3$s ~ %4$s</string>
+
+    <string name="permission_title">권한 요청</string>
+    <string name="permission_message">%1$s 사이트가 다음을 사용하려고 합니다: %2$s</string>
+    <string name="permission_camera">카메라</string>
+    <string name="permission_microphone">마이크</string>
+    <string name="permission_allow">허용</string>
+    <string name="permission_deny">차단</string>
+
+    <string name="renderer_restarted">페이지가 비정상 종료되어 다시 열었습니다</string>
+    <string name="local_file_failed">파일을 열 수 없습니다</string>
+    <string name="link_copied">링크를 복사했습니다</string>
+
+    <string name="ctx_open_new_tab">새 탭에서 열기</string>
+    <string name="ctx_open_background_tab">백그라운드 탭에서 열기</string>
+    <string name="ctx_copy_link">링크 주소 복사</string>
+    <string name="ctx_download_link">링크된 파일 다운로드</string>
+    <string name="ctx_open_image">새 탭에서 이미지 열기</string>
+    <string name="ctx_save_image">이미지 저장</string>
+    <string name="ctx_copy_image">이미지 주소 복사</string>
+    <string name="ctx_open_link_new_tab">링크를 새 탭에서 열기</string>
+    <string name="ctx_copy">복사</string>
+
+    <string name="pref_category_general">일반</string>
+    <string name="pref_category_privacy">개인정보 및 보안</string>
+    <string name="pref_category_about">정보</string>
+    <string name="pref_search_engine">검색 엔진</string>
+    <string name="pref_home_page">홈페이지</string>
+    <string name="pref_home_page_hint">비워 두면 검색 엔진의 첫 화면을 사용합니다</string>
+    <string name="pref_desktop_mode">데스크톱 사이트 요청</string>
+    <string name="pref_desktop_mode_summary">Chromebook처럼 큰 화면에서 PC용 페이지를 받습니다</string>
+    <string name="pref_restore_tabs">앱을 다시 열 때 탭 복원</string>
+    <string name="pref_javascript">JavaScript 사용</string>
+    <string name="pref_javascript_summary">끄면 대부분의 웹사이트가 제대로 동작하지 않습니다</string>
+    <string name="pref_third_party_cookies">서드파티 쿠키 허용</string>
+    <string name="pref_third_party_cookies_summary">일부 로그인(SSO)·댓글·결제 위젯에 필요할 수 있습니다. 기본값: 차단</string>
+    <string name="pref_clear_on_exit">앱을 다시 시작할 때 모든 데이터 삭제</string>
+    <string name="pref_clear_on_exit_summary">방문 기록·쿠키·캐시를 시작 시 삭제합니다 (로그인이 매번 해제됨)</string>
+    <string name="pref_clear_data_summary">방문 기록, 쿠키, 캐시를 선택해서 삭제합니다</string>
+    <string name="about_version">버전 %1$s · WebView %2$s</string>
+    <string name="about_data_separation_title">데이터 분리</string>
+    <string name="about_data_separation">방문 기록, 북마크, 쿠키, 캐시, 로그인 세션은 이 앱의 전용 저장소에만 저장되며 Chrome과 공유하지 않습니다. 이 앱은 Chrome의 데이터에 접근하지 않습니다.</string>
+    <string name="about_text">독립 브라우저 %1$s\nWebView 엔진: %2$s\n\n■ 데이터 분리\n방문 기록·북마크·쿠키·캐시·로그인 세션은 이 앱 전용 저장소(Android 앱 샌드박스)에만 저장됩니다. Chrome의 방문 기록/쿠키와 공유하지 않으며, 이 앱은 Chrome의 데이터를 읽거나 지우지 않습니다. 클라우드 백업에서도 제외됩니다.\n\n■ 이 앱이 할 수 없는 것\n웹사이트·서비스(예: Google 계정 \'내 활동\')가 자체 서버에 저장하는 기록, 학교·회사 관리자나 네트워크가 남기는 기록은 삭제하거나 막을 수 없습니다. 일부 서비스(예: Google 계정 로그인)는 앱 내장 WebView에서의 로그인을 정책적으로 차단할 수 있습니다.\n\n■ 키보드 단축키\nCtrl+T 새 탭 · Ctrl+W 탭 닫기 · Ctrl+Shift+T 닫은 탭 다시 열기\nCtrl+Tab / Ctrl+Shift+Tab 탭 전환 · Ctrl+1~9 탭 선택\nCtrl+L / Alt+D / F6 주소창 · Ctrl+R / F5 새로고침 · Esc 중지\nAlt+← 뒤로 · Alt+→ 앞으로 · Ctrl+D 북마크 · Ctrl+H 방문 기록\nCtrl+Shift+O 북마크 목록 · Ctrl+F 찾기 · Ctrl+= / Ctrl+- / Ctrl+0 확대·축소·원래대로\nCtrl+Shift+Delete 인터넷 사용 기록 삭제\nCtrl+클릭 또는 마우스 오른쪽 버튼: 링크를 새 탭에서 열기</string>
+</resources>

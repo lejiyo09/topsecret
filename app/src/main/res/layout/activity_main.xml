@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tab_bar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Tab strip -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/tab_bar"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <HorizontalScrollView
+                android:id="@+id/tab_scroll"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fillViewport="false"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/tab_strip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:orientation="horizontal"
+                    android:paddingStart="4dp" />
+            </HorizontalScrollView>
+
+            <ImageButton
+                android:id="@+id/btn_new_tab"
+                style="@style/ToolbarButton"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/new_tab_shortcut"
+                android:tooltipText="@string/new_tab_shortcut"
+                app:srcCompat="@drawable/ic_add" />
+        </LinearLayout>
+
+        <!-- Navigation bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/toolbar"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp">
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                style="@style/ToolbarButton"
+                android:contentDescription="@string/back"
+                android:tooltipText="@string/back"
+                app:srcCompat="@drawable/ic_arrow_back" />
+
+            <ImageButton
+                android:id="@+id/btn_forward"
+                style="@style/ToolbarButton"
+                android:contentDescription="@string/forward"
+                android:tooltipText="@string/forward"
+                app:srcCompat="@drawable/ic_arrow_forward" />
+
+            <ImageButton
+                android:id="@+id/btn_reload"
+                style="@style/ToolbarButton"
+                android:contentDescription="@string/reload"
+                android:tooltipText="@string/reload"
+                app:srcCompat="@drawable/ic_refresh" />
+
+            <ImageButton
+                android:id="@+id/btn_home"
+                style="@style/ToolbarButton"
+                android:contentDescription="@string/home"
+                android:tooltipText="@string/home"
+                app:srcCompat="@drawable/ic_home" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_address"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="4dp"
+                android:paddingEnd="12dp">
+
+                <ImageButton
+                    android:id="@+id/btn_security"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/site_info"
+                    android:scaleType="centerInside"
+                    android:padding="6dp"
+                    android:tooltipText="@string/site_info"
+                    app:srcCompat="@drawable/ic_search"
+                    app:tint="@color/text_secondary" />
+
+                <EditText
+                    android:id="@+id/url_bar"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/address_hint"
+                    android:imeOptions="actionGo|flagNoExtractUi"
+                    android:importantForAutofill="no"
+                    android:inputType="textUri"
+                    android:paddingStart="4dp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btn_bookmark"
+                style="@style/ToolbarButton"
+                android:contentDescription="@string/bookmark_add"
+                android:tooltipText="@string/bookmark_add"
+                app:srcCompat="@drawable/ic_star_border" />
+
+            <ImageButton
+                android:id="@+id/btn_menu"
+                style="@style/ToolbarButton"
+                android:contentDescription="@string/menu"
+                android:tooltipText="@string/menu"
+                app:srcCompat="@drawable/ic_more_vert" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/toolbar"
+            android:indeterminate="false"
+            android:max="100"
+            android:progressTint="@color/brand"
+            android:visibility="invisible" />
+
+        <!-- Find in page -->
+        <LinearLayout
+            android:id="@+id/find_bar"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/toolbar"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="12dp"
+            android:paddingEnd="4dp"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/find_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/find_hint"
+                android:imeOptions="actionSearch|flagNoExtractUi"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/find_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="48dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:textColor="@color/text_secondary" />
+
+            <ImageButton
+                android:id="@+id/find_prev"
+                style="@style/ToolbarButton"
+                android:contentDescription="@string/find_prev"
+                android:tooltipText="@string/find_prev"
+                app:srcCompat="@drawable/ic_expand_less" />
+
+            <ImageButton
+                android:id="@+id/find_next"
+                style="@style/ToolbarButton"
+                android:contentDescription="@string/find_next"
+                android:tooltipText="@string/find_next"
+                app:srcCompat="@drawable/ic_expand_more" />
+
+            <ImageButton
+                android:id="@+id/find_close"
+                style="@style/ToolbarButton"
+                android:contentDescription="@string/find_close"
+                android:tooltipText="@string/find_close"
+                app:srcCompat="@drawable/ic_close" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/web_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/white" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fullscreen_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:visibility="gone" />
+</FrameLayout>
