@@ -5,7 +5,7 @@ plugins {
 
 // Single source of truth for the release version. The CI publishes a GitHub
 // Release named "v<appVersionName>" the first time a version passes all tests.
-val appVersionName = "1.0.0"
+val appVersionName = "1.0.1"
 val appVersionCode = appVersionName.split(".").map(String::toInt).let { (major, minor, patch) ->
     major * 10000 + minor * 100 + patch
 }

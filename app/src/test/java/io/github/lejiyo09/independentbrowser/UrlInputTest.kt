@@ -73,4 +73,13 @@ class UrlInputTest {
         assertFalse(desktop.contains("Android"))
         assertFalse(desktop.contains("Mobile"))
     }
+
+    @Test fun sameDocumentIgnoresUpgradeSlashAndFragment() {
+        assertTrue(UrlInput.sameDocument("https://expired.badssl.com/", "https://expired.badssl.com"))
+        assertTrue(UrlInput.sameDocument("http://Example.com/a", "https://example.com/a#top"))
+        assertFalse(UrlInput.sameDocument("https://example.com/a", "https://example.com/b"))
+        assertFalse(UrlInput.sameDocument("https://www.google.com/", "https://expired.badssl.com/"))
+        assertFalse(UrlInput.sameDocument("https://example.com/?q=1", "https://example.com/?q=2"))
+        assertFalse(UrlInput.sameDocument(null, "https://example.com/"))
+    }
 }

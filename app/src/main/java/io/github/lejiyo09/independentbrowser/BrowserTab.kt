@@ -5,6 +5,7 @@ import android.net.Uri
 import android.net.http.SslError
 import android.os.Message
 import android.os.SystemClock
+import android.util.Log
 import android.view.View
 import android.webkit.GeolocationPermissions
 import android.webkit.PermissionRequest
@@ -23,8 +24,24 @@ class BrowserTab(val id: Long, val webView: WebView) {
     var progress: Int = 100
     var loading: Boolean = false
 
-    /** URL most recently requested for the main frame (set before the page commits). */
+    /**
+     * URL most recently requested for the main frame, kept until that page starts or finishes.
+     * Callbacks from an older page that commits late must not clear it.
+     */
     var pendingUrl: String? = null
+        set(value) {
+            field = value
+            pendingSetAt = SystemClock.uptimeMillis()
+        }
+    private var pendingSetAt = 0L
+
+    /** [pendingUrl] if it was requested recently enough to still be in flight. */
+    val activePendingUrl: String?
+        get() = pendingUrl?.takeIf { SystemClock.uptimeMillis() - pendingSetAt < PENDING_TTL_MS }
+
+    fun settlePending(loadedUrl: String) {
+        if (UrlInput.sameDocument(pendingUrl, loadedUrl)) pendingUrl = null
+    }
 
     /** URL to load the first time the tab is shown (restored background tabs). */
     var deferredUrl: String? = null
@@ -41,16 +58,20 @@ class BrowserTab(val id: Long, val webView: WebView) {
     var modifierClickAt: Long = 0L
 
     val isBlank: Boolean
-        get() = deferredUrl == null && blockedUrl == null && pendingUrl == null && UrlInput.displayText(url).isEmpty()
+        get() = deferredUrl == null && blockedUrl == null && activePendingUrl == null && UrlInput.displayText(url).isEmpty()
 
     /** The address the user should see for this tab. */
     val shownUrl: String
-        get() = blockedUrl ?: deferredUrl ?: UrlInput.displayText(url).ifEmpty { UrlInput.displayText(pendingUrl) }
+        get() = blockedUrl ?: deferredUrl ?: UrlInput.displayText(url).ifEmpty { UrlInput.displayText(activePendingUrl) }
 
     fun consumeModifierClick(): Boolean {
         val recent = SystemClock.uptimeMillis() - modifierClickAt < 1500
         modifierClickAt = 0L
         return recent
+    }
+
+    private companion object {
+        const val PENDING_TTL_MS = 60_000L
     }
 }
 
@@ -72,6 +93,10 @@ interface TabHost {
 }
 
 class TabWebViewClient(private val tab: BrowserTab, private val host: TabHost) : WebViewClient() {
+
+    private companion object {
+        const val TAG = "IndependentBrowser"
+    }
 
     override fun shouldOverrideUrlLoading(view: WebView, request: WebResourceRequest): Boolean {
         val uri = request.url
@@ -96,7 +121,7 @@ class TabWebViewClient(private val tab: BrowserTab, private val host: TabHost) :
             tab.blockedReason = null
         }
         tab.url = url
-        tab.pendingUrl = null
+        tab.settlePending(url)
         tab.loading = true
         tab.favicon = favicon
         tab.defaultScale = 0f
@@ -106,7 +131,7 @@ class TabWebViewClient(private val tab: BrowserTab, private val host: TabHost) :
     override fun onPageFinished(view: WebView, url: String) {
         tab.loading = false
         tab.progress = 100
-        tab.pendingUrl = null
+        tab.settlePending(url)
         view.title?.takeIf { it.isNotBlank() && it != url }?.let { tab.title = it }
         host.onTabStateChanged(tab)
     }
@@ -121,8 +146,12 @@ class TabWebViewClient(private val tab: BrowserTab, private val host: TabHost) :
         // Certificate errors are never bypassed.
         handler.cancel()
         val failed = error.url
-        val isMainFrame = failed == tab.pendingUrl || failed == view.url || failed == tab.url ||
-            (tab.pendingUrl != null && sameHost(failed, tab.pendingUrl))
+        val pending = tab.activePendingUrl
+        val isMainFrame = UrlInput.sameDocument(failed, pending) || UrlInput.sameDocument(failed, view.url) ||
+            UrlInput.sameDocument(failed, tab.url) || (pending != null && sameHost(failed, pending))
+        if (BuildConfig.DEBUG) {
+            Log.i(TAG, "SSL error ${error.primaryError} url=$failed pending=$pending view=${view.url} tab=${tab.url} main=$isMainFrame")
+        }
         if (isMainFrame) host.onMainFrameSslError(tab, failed, error)
     }
 

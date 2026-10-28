@@ -32,6 +32,8 @@ else
   status=1
 fi
 adb logcat -d > "$OUT/logcat-instrumentation-api$API.txt"
+grep -E "IndependentBrowser|TestRunner: (started|failed|finished)|AndroidRuntime|cr_.*(SSL|Cert|net::ERR)" \
+  "$OUT/logcat-instrumentation-api$API.txt" | tail -n 300 > "$OUT/logcat-excerpt-api$API.txt" || true
 adb uninstall "$DEBUG_ID.test" > /dev/null 2>&1 || true
 adb uninstall "$DEBUG_ID" > /dev/null 2>&1 || true
 

@@ -1,5 +1,7 @@
 package io.github.lejiyo09.independentbrowser
 
+import java.net.URI
+import java.net.URISyntaxException
 import java.net.URLEncoder
 import java.util.Locale
 
@@ -54,6 +56,25 @@ object UrlInput {
     fun isHttps(url: String?): Boolean = url?.lowercase(Locale.ROOT)?.startsWith("https://") == true
 
     fun isInPageScheme(scheme: String?): Boolean = scheme?.lowercase(Locale.ROOT) in IN_PAGE_SCHEMES
+
+    /**
+     * True when both URLs point at the same document, ignoring an http->https upgrade,
+     * host case, a missing trailing "/" and the #fragment.
+     */
+    fun sameDocument(a: String?, b: String?): Boolean {
+        if (a == null || b == null) return false
+        if (a == b) return true
+        return try {
+            val x = URI(a)
+            val y = URI(b)
+            x.host != null && x.host.equals(y.host, ignoreCase = true) &&
+                x.port == y.port &&
+                x.rawPath.orEmpty().ifEmpty { "/" } == y.rawPath.orEmpty().ifEmpty { "/" } &&
+                x.rawQuery == y.rawQuery
+        } catch (e: URISyntaxException) {
+            false
+        }
+    }
 
     /** What the address bar shows for a loaded URL. */
     fun displayText(url: String?): String = if (url.isNullOrEmpty() || url == "about:blank") "" else url
