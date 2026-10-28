@@ -1,26 +1,26 @@
-10-28 00:25:42.426  2956  2956 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-10-28 00:25:42.430  2956  2956 I AndroidRuntime: Using default boot image
-10-28 00:25:42.430  2956  2956 I AndroidRuntime: Leaving lock profiling enabled
-10-28 00:25:42.653  2956  2956 D AndroidRuntime: Calling main entry com.android.commands.am.Am
-10-28 00:25:43.578  3021  3160 I TestRunner: started: bookmarksAndHistoryStorage(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
-10-28 00:25:46.998  3021  3160 I TestRunner: finished: bookmarksAndHistoryStorage(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
-10-28 00:25:47.002  3021  3160 I TestRunner: started: visitIsRecordedInAppHistory(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
-10-28 00:25:51.112  3021  3160 I TestRunner: finished: visitIsRecordedInAppHistory(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
-10-28 00:25:51.117  3021  3160 I TestRunner: started: addressBarLoadsRealWebsite(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
-10-28 00:25:54.441  3021  3160 I TestRunner: finished: addressBarLoadsRealWebsite(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
-10-28 00:25:54.448  3021  3160 I TestRunner: started: webDataLivesInsideThisAppsPrivateStorage(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
-10-28 00:25:56.377  3021  3160 I TestRunner: finished: webDataLivesInsideThisAppsPrivateStorage(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
-10-28 00:25:56.378  3021  3160 I TestRunner: started: closingLastTabLeavesOneBlankTab(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
-10-28 00:25:58.767  3021  3160 I TestRunner: finished: closingLastTabLeavesOneBlankTab(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
-10-28 00:25:58.771  3021  3160 I TestRunner: started: clearingDataRemovesCookies(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
-10-28 00:26:01.678  3021  3160 I TestRunner: finished: clearingDataRemovesCookies(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
-10-28 00:26:01.725  3021  3160 I TestRunner: started: startsWithOneTab(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
-10-28 00:26:03.982  3021  3160 I TestRunner: finished: startsWithOneTab(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
-10-28 00:26:03.986  3021  3160 I TestRunner: started: searchTextGoesToSearchEngine(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
-10-28 00:26:06.330  3021  3160 I TestRunner: finished: searchTextGoesToSearchEngine(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
-10-28 00:26:06.330  3021  3160 I TestRunner: started: invalidCertificateIsBlocked(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
-10-28 00:26:08.314  3021  3021 I IndependentBrowser: SSL error 4 url=https://expired.badssl.com/ pending=https://expired.badssl.com/ view=https://expired.badssl.com/ tab=https://www.google.com/ main=true
-10-28 00:26:09.611  3021  3160 I TestRunner: finished: invalidCertificateIsBlocked(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
-10-28 00:26:09.667  3021  3160 I TestRunner: started: keyboardShortcutsManageTabs(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
-10-28 00:26:11.800  3021  3160 I TestRunner: finished: keyboardShortcutsManageTabs(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
-10-28 00:26:11.914  2956  2956 I AndroidRuntime: VM exiting with result code 0.
+10-28 00:32:19.318  3295  3295 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-28 00:32:19.371  3295  3295 I AndroidRuntime: Using default boot image
+10-28 00:32:19.371  3295  3295 I AndroidRuntime: Leaving lock profiling enabled
+10-28 00:32:19.722  3295  3295 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+10-28 00:32:20.973  3362  3485 I TestRunner: started: bookmarksAndHistoryStorage(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
+10-28 00:32:26.304  3362  3485 I TestRunner: finished: bookmarksAndHistoryStorage(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
+10-28 00:32:26.304  3362  3485 I TestRunner: started: visitIsRecordedInAppHistory(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
+10-28 00:32:30.459  3362  3485 I TestRunner: finished: visitIsRecordedInAppHistory(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
+10-28 00:32:30.534  3362  3485 I TestRunner: started: addressBarLoadsRealWebsite(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
+10-28 00:32:33.998  3362  3485 I TestRunner: finished: addressBarLoadsRealWebsite(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
+10-28 00:32:34.047  3362  3485 I TestRunner: started: webDataLivesInsideThisAppsPrivateStorage(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
+10-28 00:32:37.638  3362  3485 I TestRunner: finished: webDataLivesInsideThisAppsPrivateStorage(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
+10-28 00:32:37.639  3362  3485 I TestRunner: started: closingLastTabLeavesOneBlankTab(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
+10-28 00:32:40.449  3362  3485 I TestRunner: finished: closingLastTabLeavesOneBlankTab(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
+10-28 00:32:40.471  3362  3485 I TestRunner: started: clearingDataRemovesCookies(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
+10-28 00:32:42.839  3362  3485 I TestRunner: finished: clearingDataRemovesCookies(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
+10-28 00:32:42.840  3362  3485 I TestRunner: started: startsWithOneTab(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
+10-28 00:32:45.941  3362  3485 I TestRunner: finished: startsWithOneTab(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
+10-28 00:32:45.942  3362  3485 I TestRunner: started: searchTextGoesToSearchEngine(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
+10-28 00:32:49.552  3362  3485 I TestRunner: finished: searchTextGoesToSearchEngine(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
+10-28 00:32:49.557  3362  3485 I TestRunner: started: invalidCertificateIsBlocked(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
+10-28 00:32:52.473  3362  3362 I IndependentBrowser: SSL error 4 url=https://expired.badssl.com/ pending=https://expired.badssl.com/ view=https://www.google.com/ tab=https://www.google.com/ main=true
+10-28 00:32:53.992  3362  3485 I TestRunner: finished: invalidCertificateIsBlocked(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
+10-28 00:32:53.994  3362  3485 I TestRunner: started: keyboardShortcutsManageTabs(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
+10-28 00:32:56.672  3362  3485 I TestRunner: finished: keyboardShortcutsManageTabs(io.github.lejiyo09.independentbrowser.BrowserInstrumentedTest)
+10-28 00:32:56.776  3295  3295 I AndroidRuntime: VM exiting with result code 0.
